@@ -91,12 +91,47 @@
 
 <br/>  
 
-## Github Stats  
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=pakamaka345&show_icons=true&count_private=true&hide_border=true" align="center" /></div>  
+# My projects
+<p align="center">
+  <a href="https://github.com/pakamaka345/mypizza">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=mypizza" height="192px" width="49.5%"/>
+  </a>
+  <a href="https://github.com/pakamaka345/graphics-editor">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=graphics-editor" height="192px" width="49.5%"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/pakamaka345/bridge_to_usa">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=bridge_to_usa" height="192px" width="49.5%"/>
+  </a>
+  <a href="https://github.com/pakamaka345/oop">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=oop" height="192px" width="49.5%"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/pakamaka345/Spring_Cloud_Taco">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=Spring_Cloud_Taco" height="192px" width="49.5%"/>
+  </a>
+  <a href="https://github.com/pakamaka345/timeManagerBot">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=timeManagerBot" height="192px" width="49.5%"/>
+  </a>
+</p>
 
-<div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pakamaka345&hide_border=true&layout=compact" align="center" /></div>  
 
-<br/>  
+# Statistics
+<p align="center">
+  <a href="https://github.com/pakamaka345">
+    
+  </a>
+</p>
+<a> 
+    <a href="https://github.com/pakamaka345"><img alt="Al Siam's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=pakamaka345&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&hide_border=true&bg_color=0D1117&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+  <a href="https://github.com/pakamaka345"><img alt="Al Siam's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=pakamaka345&langs_count=8&layout=compact&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&hide_border=true&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+  <br/>
+</a>
+
+
+![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=pakamaka345&theme=react-dark&hide_border=true&area=true&bg_color=0D1117&color=FF5F5F&line=FF5F5F&point=FFFFFF)
 
   
 
