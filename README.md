@@ -104,8 +104,8 @@
   <a href="https://github.com/pakamaka345/bridge_to_usa">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=bridge_to_usa" height="192px" width="49.5%"/>
   </a>
-  <a href="https://github.com/pakamaka345/oop">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=oop" height="192px" width="49.5%"/>
+  <a href="https://github.com/pakamaka345/OOP-university-exercises">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=OOP-university-exercises" height="192px" width="49.5%"/>
   </a>
 </p>
 <p align="center">
