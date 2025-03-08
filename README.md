@@ -6,7 +6,7 @@
 ### <div align="center">I'm Nikita, a full-stack freelance developer 👨‍💻 programming since 2017 🚀</div>  
   
 
-- 🔭 I’m currently working on [Graphics-editor](https://github.com/pakamaka345/graphics-editor)  
+- 🔭 I’m currently working on ...  
   
 
 - 🌱 I’m currently learning DSA and DevOps (**Docker, Aws, CI/CD**)  
@@ -75,10 +75,10 @@
 
 
 ## Connect with me  
-<a href="https://github.com/pakamak345" target="_blank">
+<a href="https://github.com/Nikita-Lysiuk" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://twitter.com/NLysiuk23" target="_blank">
+<a href="https://x.com/Nikita_lysiuk06" target="_blank">
 <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
 </a>
 <a href="https://stackoverflow.com/users/23113955/nikita" target="_blank">
@@ -93,26 +93,26 @@
 
 # My projects
 <p align="center">
-  <a href="https://github.com/pakamaka345/mypizza">
+  <a href="https://github.com/Nikita-Lysiuk/mypizza">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=mypizza" height="192px" width="49.5%"/>
   </a>
-  <a href="https://github.com/pakamaka345/graphics-editor">
+  <a href="https://github.com/Nikita-Lysiuk/graphics-editor">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=graphics-editor" height="192px" width="49.5%"/>
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/pakamaka345/bridge_to_usa">
+  <a href="https://github.com/Nikita-Lysiuk/bridge_to_usa">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=bridge_to_usa" height="192px" width="49.5%"/>
   </a>
-  <a href="https://github.com/pakamaka345/OOP-university-exercises">
+  <a href="https://github.com/Nikita-Lysiuk/OOP-university-exercises">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=OOP-university-exercises" height="192px" width="49.5%"/>
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/pakamaka345/Spring_Cloud_Taco">
+  <a href="https://github.com/Nikita-Lysiuk/Spring_Cloud_Taco">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=Spring_Cloud_Taco" height="192px" width="49.5%"/>
   </a>
-  <a href="https://github.com/pakamaka345/timeManagerBot">
+  <a href="https://github.com/Nikita-Lysiuk/Vinyl-Store">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=timeManagerBot" height="192px" width="49.5%"/>
   </a>
 </p>
@@ -120,25 +120,25 @@
 
 # Statistics
 <p align="center">
-  <a href="https://github.com/pakamaka345">
+  <a href="https://github.com/Nikita-Lysiuk">
     
   </a>
 </p>
 <a> 
-    <a href="https://github.com/pakamaka345"><img alt="Al Siam's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=pakamaka345&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&hide_border=true&bg_color=0D1117&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
-  <a href="https://github.com/pakamaka345"><img alt="Al Siam's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=pakamaka345&langs_count=8&layout=compact&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&hide_border=true&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+    <a href="https://github.com/Nikita-Lysiuk"><img alt="Al Siam's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=Nikita-Lysiuk&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&hide_border=true&bg_color=0D1117&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+  <a href="https://github.com/pakamaka345"><img alt="Al Siam's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=Nikita-Lysiuk&langs_count=8&layout=compact&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&hide_border=true&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
   <br/>
 </a>
 
 
-![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=pakamaka345&theme=react-dark&hide_border=true&area=true&bg_color=0D1117&color=FF5F5F&line=FF5F5F&point=FFFFFF)
+![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Nikita-Lysiuk&theme=react-dark&hide_border=true&area=true&bg_color=0D1117&color=FF5F5F&line=FF5F5F&point=FFFFFF)
 
   
 
 <br/>  
 
 <div align="center">
-<img src="https://komarev.com/ghpvc/?username=pakamaka345&&style=flat-square" align="center" />
+<img src="https://komarev.com/ghpvc/?username=Nikita-Lysiuk&&style=flat-square" align="center" />
 </div>  
   
 
