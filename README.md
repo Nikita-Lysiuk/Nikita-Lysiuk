@@ -94,26 +94,26 @@
 # My projects
 <p align="center">
   <a href="https://github.com/Nikita-Lysiuk/mypizza">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=mypizza" height="192px" width="49.5%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=mypizza" height="192px" width="49.5%"/>
   </a>
   <a href="https://github.com/Nikita-Lysiuk/graphics-editor">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=graphics-editor" height="192px" width="49.5%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=graphics-editor" height="192px" width="49.5%"/>
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/Nikita-Lysiuk/bridge_to_usa">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=bridge_to_usa" height="192px" width="49.5%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=bridge_to_usa" height="192px" width="49.5%"/>
   </a>
   <a href="https://github.com/Nikita-Lysiuk/OOP-university-exercises">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=OOP-university-exercises" height="192px" width="49.5%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=OOP-university-exercises" height="192px" width="49.5%"/>
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/Nikita-Lysiuk/Spring_Cloud_Taco">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=Spring_Cloud_Taco" height="192px" width="49.5%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=Spring_Cloud_Taco" height="192px" width="49.5%"/>
   </a>
   <a href="https://github.com/Nikita-Lysiuk/Vinyl-Store">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pakamaka345&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=timeManagerBot" height="192px" width="49.5%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=Vinyl-Store" height="192px" width="49.5%"/>
   </a>
 </p>
 
