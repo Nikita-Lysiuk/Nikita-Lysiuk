@@ -126,7 +126,7 @@
 </p>
 <a> 
     <a href="https://github.com/Nikita-Lysiuk"><img alt="Al Siam's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=Nikita-Lysiuk&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&hide_border=true&bg_color=0D1117&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
-  <a href="https://github.com/pakamaka345"><img alt="Al Siam's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=Nikita-Lysiuk&langs_count=8&layout=compact&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&hide_border=true&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+  <a href="https://github.com/Nikita-Lysiuk"><img alt="Al Siam's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=Nikita-Lysiuk&langs_count=8&layout=compact&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&hide_border=true&title_color=FF5F5F&icon_color=F8D866" height="192px" width="49.5%"/></a>
   <br/>
 </a>
 
