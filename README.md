@@ -111,6 +111,12 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Nikita-Lysiuk/spring-library">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=spring-library" height="192px" width="49.5%"/>
+  </a>
+</p>
+
 
 # Statistics
 <p align="center">
