@@ -3,7 +3,7 @@
 </div>  
   
 
-### <div align="center">I'm Nikita, a full-stack freelance developer 👨‍💻 programming since 2017 🚀</div>  
+### <div align="center">I'm Nikita, a full-stack developer 👨‍💻 programming since 2017 🚀</div>  
   
 
 - 🔭 I’m currently working on ...  
@@ -15,7 +15,7 @@
 - ❓ Ask me about anything related to RestFull and web development  
   
 
-- ⚡ Fun fact: I use tabs over spaces  
+- ⚡ Fun fact: Thinks semicolons are optional gods.
   
 
 <br/>  
@@ -33,7 +33,9 @@
 <a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="50" /></a>  
 <a href="https://www.tailwindcss.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg" alt="Tailwind CSS" height="50" /></a>  
 <a href="https://mui.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mui.png" alt="Material UI" height="50" /></a>  
-<a href="https://jquery.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="50" /></a>  
+<a href="https://nestjs.com/" target="_blank">
+  <img style="margin: 10px" src="https://cdn.worldvectorlogo.com/logos/nestjs.svg" alt="NestJS" height="50" />
+</a>
 <a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50" /></a>  
 <a href="https://www.electronjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/electron-original.svg" alt="Electron" height="50" /></a>  
 </div>
@@ -96,24 +98,16 @@
   <a href="https://github.com/Nikita-Lysiuk/mypizza">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=mypizza" height="192px" width="49.5%"/>
   </a>
-  <a href="https://github.com/Nikita-Lysiuk/graphics-editor">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=graphics-editor" height="192px" width="49.5%"/>
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/Nikita-Lysiuk/bridge_to_usa">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=bridge_to_usa" height="192px" width="49.5%"/>
-  </a>
-  <a href="https://github.com/Nikita-Lysiuk/OOP-university-exercises">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=OOP-university-exercises" height="192px" width="49.5%"/>
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/Nikita-Lysiuk/Spring_Cloud_Taco">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=Spring_Cloud_Taco" height="192px" width="49.5%"/>
-  </a>
   <a href="https://github.com/Nikita-Lysiuk/Vinyl-Store">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=Vinyl-Store" height="192px" width="49.5%"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Nikita-Lysiuk/egypt_adventure">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=egypt_adventure" height="192px" width="49.5%"/>
+  </a>
+  <a href="https://github.com/Nikita-Lysiuk/PixelPatternsAI">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&hide_border=true&title_color=FF5F5F&text_color=FFFFFF&bg_color=0D1117&repo=PixelPatternsAI" height="192px" width="49.5%"/>
   </a>
 </p>
 
@@ -159,6 +153,4 @@
             </a></div>
 <br />
 
-<div align="center">
-<img src="https://i.pinimg.com/736x/d7/61/b6/d761b69a0b9e0ac64e597c0dbaa5c472.jpg" align="center" style="width: 100%" />
-</div>  
+
