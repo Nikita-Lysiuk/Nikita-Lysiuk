@@ -1,8 +1,13 @@
 name: Update README cards
+
 on:
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,7 +34,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: pin
-          options: username=Nikita-Lysiuk&repo=Fluid-Engine&theme=transparent&title_color=ffffff&text_color=a78bfa&bg_color=0f0d1f&icon_color=a78bfa&description_lines_count=2
+          options: username=Nikita-Lysiuk&repo=Fluid-Engine&theme=transparent&title_color=ffffff&text_color=a78bfa&icon_color=a78bfa&description_lines_count=2
           path: profile/pin-Fluid-Engine.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
