@@ -1,20 +1,29 @@
 name: Update README cards
 on:
   schedule:
-    - cron: "0 3 * * *" # Оновлення щоночі
-  workflow_dispatch: # Можливість запустити вручну
+    - cron: "0 3 * * *"
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Generate stats card
+
+      - name: Generate cards
         uses: readme-tools/github-readme-stats-action@v1
         with:
-          card: stats
-          options: username=Nikita-Lysiuk&show_icons=true&theme=transparent
-          path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          path: profile/
+          # Тут ми перераховуємо всі картки, які треба згенерувати
+          cards: |
+            stats?username=Nikita-Lysiuk&show_icons=true&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa
+            top-langs?username=Nikita-Lysiuk&langs_count=8&layout=compact&theme=transparent&title_color=a78bfa&text_color=8b949e&hide_border=true
+            pin?username=Nikita-Lysiuk&repo=Fluid-Engine&theme=transparent&title_color=ffffff&text_color=a78bfa&bg_color=0f0d1f&icon_color=a78bfa&description_lines_count=2
+            pin?username=Nikita-Lysiuk&repo=Vinyl-Store&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa&hide_border=true
+            pin?username=Nikita-Lysiuk&repo=egypt_adventure&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa&hide_border=true
+            pin?username=Nikita-Lysiuk&repo=PixelPatternsAI&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa&hide_border=true
+            pin?username=Nikita-Lysiuk&repo=spring-library&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa&hide_border=true
+
       - name: Commit cards
         run: |
           git config user.name "github-actions"
