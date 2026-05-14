@@ -106,16 +106,16 @@ The long game: build the studio that makes it.
 <!-- Featured project — full width -->
 <div align="center">
 
-[![Fluid-Engine](https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&repo=Fluid-Engine&hide_border=true&title_color=ffffff&text_color=a78bfa&bg_color=0f0d1f&icon_color=a78bfa&description_lines_count=2)](https://github.com/Nikita-Lysiuk/Fluid-Engine)
+[![Fluid-Engine](./profile/pin-Fluid-Engine.svg)](https://github.com/Nikita-Lysiuk/Fluid-Engine)
 
 </div>
 
 <!-- 2x2 grid -->
 <div align="center">
 
-[![Vinyl-Store](https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&repo=Vinyl-Store&hide_border=true&title_color=a78bfa&text_color=8b949e&bg_color=0d0d18&icon_color=a78bfa)](https://github.com/Nikita-Lysiuk/Vinyl-Store)&nbsp;[![egypt_adventure](https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&repo=egypt_adventure&hide_border=true&title_color=a78bfa&text_color=8b949e&bg_color=0d0d18&icon_color=a78bfa)](https://github.com/Nikita-Lysiuk/egypt_adventure)
+[![Vinyl-Store](./profile/pin-Vinyl-Store.svg)](https://github.com/Nikita-Lysiuk/Vinyl-Store)&nbsp;[![egypt_adventure](./profile/pin-egypt_adventure.svg)](https://github.com/Nikita-Lysiuk/egypt_adventure)
 
-[![PixelPatternsAI](https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&repo=PixelPatternsAI&hide_border=true&title_color=a78bfa&text_color=8b949e&bg_color=0d0d18&icon_color=a78bfa)](https://github.com/Nikita-Lysiuk/PixelPatternsAI)&nbsp;[![spring-library](https://github-readme-stats.vercel.app/api/pin/?username=Nikita-Lysiuk&repo=spring-library&hide_border=true&title_color=a78bfa&text_color=8b949e&bg_color=0d0d18&icon_color=a78bfa)](https://github.com/Nikita-Lysiuk/spring-library)
+[![PixelPatternsAI](./profile/pin-PixelPatternsAI.svg)](https://github.com/Nikita-Lysiuk/PixelPatternsAI)&nbsp;[![spring-library](./profile/pin-spring-library.svg)](https://github.com/Nikita-Lysiuk/spring-library)
 
 </div>
 
@@ -130,7 +130,7 @@ The long game: build the studio that makes it.
 
 <div align="center">
 
-[![GitHub Stats](https://denvercoder1-github-readme-stats.vercel.app/api?username=Nikita-Lysiuk&show_icons=true&count_private=true&hide_border=true&bg_color=0d0d18&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa)](https://github.com/Nikita-Lysiuk)&nbsp;[![Top Langs](https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=Nikita-Lysiuk&langs_count=8&layout=compact&count_private=true&hide_border=true&bg_color=0d0d18&title_color=a78bfa&text_color=8b949e)](https://github.com/Nikita-Lysiuk)
+[![GitHub Stats](./profile/stats.svg)](https://github.com/Nikita-Lysiuk)&nbsp;[![Top Langs](./profile/top-langs.svg)](https://github.com/Nikita-Lysiuk)
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Nikita-Lysiuk&theme=react-dark&hide_border=true&area=true&bg_color=0d0d18&color=a78bfa&line=7c3aed&point=ffffff)](https://github.com/Nikita-Lysiuk)
 
