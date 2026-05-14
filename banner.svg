@@ -1,0 +1,82 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7c3aed" stroke-width="0.3" opacity="0.25"/>
+    </pattern>
+    <linearGradient id="fade-left" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0a0f" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#0a0a0f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade-right" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="70%" stop-color="#0a0a0f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="fade-bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="60%" stop-color="#0a0a0f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="#0a0a0f"/>
+
+  <!-- Grid -->
+  <rect width="900" height="280" fill="url(#grid)"/>
+
+  <!-- Glow center -->
+  <rect width="900" height="280" fill="url(#glow)"/>
+
+  <!-- Edge fades -->
+  <rect width="900" height="280" fill="url(#fade-left)"/>
+  <rect width="900" height="280" fill="url(#fade-right)"/>
+  <rect width="900" height="280" fill="url(#fade-bottom)"/>
+
+  <!-- Decorative corner tag -->
+  <text x="860" y="24" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.12" letter-spacing="2">v2.0 // NIKITA_LYSIUK</text>
+
+  <!-- Accent line top -->
+  <line x1="60" y1="44" x2="840" y2="44" stroke="#7c3aed" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Label -->
+  <text x="60" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="3" opacity="0.9">// DEVELOPER &amp; BUILDER</text>
+
+  <!-- Main name -->
+  <text x="60" y="130" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="-2" opacity="0.97">Nikita</text>
+  <text x="60" y="210" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#7c3aed" letter-spacing="-2" opacity="0.97">Lysiuk</text>
+
+  <!-- Tagline pills -->
+  <rect x="430" y="100" width="158" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
+  <rect x="430" y="100" width="158" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
+  <text x="509" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">graphics programming</text>
+
+  <rect x="596" y="100" width="138" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
+  <rect x="596" y="100" width="138" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
+  <text x="665" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">game development</text>
+
+  <rect x="430" y="136" width="82" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
+  <rect x="430" y="136" width="82" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <text x="471" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">mobile</text>
+
+  <rect x="520" y="136" width="78" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
+  <rect x="520" y="136" width="78" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <text x="559" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">systems</text>
+
+  <rect x="606" y="136" width="92" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
+  <rect x="606" y="136" width="92" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <text x="652" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">low-level</text>
+
+  <!-- Tagline text -->
+  <text x="430" y="195" font-family="'JetBrains Mono', monospace" font-size="12" fill="#ffffff" opacity="0.25" letter-spacing="0.5">rendering frames · building systems</text>
+  <text x="430" y="213" font-family="'JetBrains Mono', monospace" font-size="12" fill="#7c3aed" opacity="0.6" letter-spacing="0.5">shipping games</text>
+
+  <!-- Accent line bottom -->
+  <line x1="60" y1="248" x2="840" y2="248" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Location -->
+  <text x="60" y="264" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.2" letter-spacing="2">LUBLIN // PL</text>
+  <text x="840" y="264" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.2" letter-spacing="2">CS @ UMCS</text>
+</svg>
