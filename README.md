@@ -28,16 +28,9 @@
 <img src="divider_philosophy.svg" width="100%" alt="philosophy"/>
 </div>
 
-```
-I write code that lives close to the metal.
-Pipelines, shaders, physics — that's where I feel at home.
-
-By day I ship production software.
-By night I push polygons and simulate worlds.
-
-The goal:      build something people play.
-The long game: build the studio that makes it.
-```
+<div align="center">
+<img src="philosophy.svg" width="100%" alt="I write code that lives close to the metal. Pipelines, shaders, physics — that's where I feel at home. By day I ship production software. By night I push polygons and simulate worlds. The goal: build something people play. The long game: build the studio that makes it."/>
+</div>
 
 <br/>
 
@@ -67,30 +60,7 @@ The long game: build the studio that makes it.
 <br/>
 
 <div align="center">
-
-<table>
-<tr>
-<td align="center" width="33%">
-
-**`rendering`**<br/>
-<sub>making pixels look right<br/>shaders · pipelines · light</sub>
-
-</td>
-<td align="center" width="33%">
-
-**`systems`**<br/>
-<sub>making things run fast<br/>architecture · memory · perf</sub>
-
-</td>
-<td align="center" width="33%">
-
-**`craft`**<br/>
-<sub>making code worth reading<br/>the kind someone opens and nods</sub>
-
-</td>
-</tr>
-</table>
-
+<img src="values.svg" width="100%" alt="rendering — making pixels look right (shaders · pipelines · light) · systems — making things run fast (architecture · memory · perf) · craft — making code worth reading (the kind someone opens and nods)"/>
 </div>
 
 <br/>

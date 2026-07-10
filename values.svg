@@ -1,0 +1,52 @@
+<svg width="900" height="210" viewBox="0 0 900 210" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7c3aed" stroke-width="0.3" opacity="0.25"/>
+    </pattern>
+    <linearGradient id="fade-left" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0a0f" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#0a0a0f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade-right" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="70%" stop-color="#0a0a0f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .col { animation: colIn 0.7s ease-out backwards; }
+    .c0 { animation-delay: 0.1s; }
+    .c1 { animation-delay: 0.35s; }
+    .c2 { animation-delay: 0.6s; }
+    @keyframes colIn { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+  <rect width="900" height="210" fill="#0a0a0f"/>
+  <rect width="900" height="210" fill="url(#grid)"/>
+  <rect width="900" height="210" fill="url(#fade-left)"/>
+  <rect width="900" height="210" fill="url(#fade-right)"/>
+  <line x1="60" y1="18" x2="840" y2="18" stroke="#7c3aed" stroke-width="0.5" opacity="0.35"/>
+  <line x1="60" y1="192" x2="840" y2="192" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
+  <line x1="320" y1="55" x2="320" y2="160" stroke="#7c3aed" stroke-width="0.5" opacity="0.2"/>
+  <line x1="580" y1="55" x2="580" y2="160" stroke="#7c3aed" stroke-width="0.5" opacity="0.2"/>
+
+  <g class="col c0">
+    <text x="190" y="72" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" fill="#7c3aed" opacity="0.75">&#9650;</text>
+    <text x="190" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">rendering</text>
+    <line x1="156" y1="122" x2="224" y2="122" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
+    <text x="190" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">making pixels look right</text>
+    <text x="190" y="169" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">shaders · pipelines · light</text>
+  </g>
+  <g class="col c1">
+    <text x="450" y="72" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" fill="#7c3aed" opacity="0.75">&#9635;</text>
+    <text x="450" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">systems</text>
+    <line x1="416" y1="122" x2="484" y2="122" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
+    <text x="450" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">making things run fast</text>
+    <text x="450" y="169" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">architecture · memory · perf</text>
+  </g>
+  <g class="col c2">
+    <text x="710" y="72" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" fill="#7c3aed" opacity="0.75">&lt;/&gt;</text>
+    <text x="710" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">craft</text>
+    <line x1="676" y1="122" x2="744" y2="122" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
+    <text x="710" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">making code worth reading</text>
+    <text x="710" y="169" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">the kind someone opens and nods</text>
+  </g>
+</svg>

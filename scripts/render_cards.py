@@ -37,7 +37,7 @@ REPOS = [
         "name": "Fluid-Engine",
         "featured": True,
         "tag": "diploma project",
-        "tagline": "Real-time fluid simulation in Rust with Vulkan rendering — "
+        "tagline": "Real-time DFSPH fluid simulation in Rust with Vulkan rendering — "
                    "compute pipelines, CPU/GPU parallelism, performance first.",
     },
     {
@@ -137,16 +137,13 @@ def featured_card(repo, stars, lang):
     name = html.escape(repo["name"])
     tag = html.escape(repo.get("tag", "featured"))
     lines = wrap(repo["tagline"], 92)
-    tag_w = round(44 + 7.8 * (len(tag) + 10))
+    tag_w = round(36 + 7.8 * len(tag))
     svg = head(W, H)
     svg += f'''  <text x="32" y="52" font-family="'JetBrains Mono', monospace" font-size="18" fill="{VIOLET}" font-weight="700">&#10095;</text>
   <text x="54" y="52" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="{TEXT}">{name}</text>
   <rect x="{W - 32 - tag_w}" y="30" width="{tag_w}" height="28" rx="14" fill="{VIOLET}" opacity="0.16"/>
   <rect x="{W - 32 - tag_w}" y="30" width="{tag_w}" height="28" rx="14" fill="none" stroke="{VIOLET_LT}" stroke-width="1" opacity="0.6"/>
-  <circle cx="{W - 32 - tag_w + 16}" cy="44" r="4" fill="{VIOLET_XLT}">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <text x="{W - 32 - tag_w + 28}" y="48" font-family="'JetBrains Mono', monospace" font-size="11" fill="{VIOLET_XLT}" letter-spacing="1">active // {tag}</text>
+  <text x="{W - 32 - tag_w / 2}" y="48" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="{VIOLET_XLT}" letter-spacing="1">{tag}</text>
 '''
     for i, ln in enumerate(lines):
         svg += f'  <text x="32" y="{92 + i * 21}" font-family="\'JetBrains Mono\', monospace" font-size="12.5" fill="{GREY}">{html.escape(ln)}</text>\n'
