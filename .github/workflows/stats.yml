@@ -1,40 +1,78 @@
-name: Update README cards
+name: Refresh profile
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 3 * * *"   # 03:00 UTC
+    - cron: "0 15 * * *"  # 15:00 UTC — twice a day keeps cards fresh
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/stats.yml"
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: true
 
 permissions:
   contents: write
 
+# Card styling shared by every github-readme-stats card.
+# Note: add a classic PAT with `repo` scope as the GH_PAT secret to also
+# count private-repo contributions; falls back to GITHUB_TOKEN otherwise.
+env:
+  THEME: theme=transparent&hide_border=true&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa
+
 jobs:
-  build:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: GitHub Stats
+      # ---------- recent activity feed (writes into README markers) ----------
+      - name: Recent activity
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+        with:
+          GH_USERNAME: Nikita-Lysiuk
+          TARGET_FILE: README.md
+          MAX_LINES: 6
+          COMMIT_MSG: "chore: refresh recent activity"
+
+      # ---------- contribution snake ----------
+      - name: Contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Nikita-Lysiuk
+          outputs: |
+            profile/snake.svg?color_snake=#c4b5fd&color_dots=#1a1a2e,#3b2a63,#5b3ba8,#7c3aed,#a78bfa
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ---------- stat cards ----------
+      - name: GitHub stats
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=Nikita-Lysiuk&show_icons=true&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa
+          options: username=Nikita-Lysiuk&show_icons=true&include_all_commits=true&rank_icon=github&ring_color=7c3aed&card_width=467&${{ env.THEME }}
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
-      - name: Top Languages
+      - name: Top languages
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=Nikita-Lysiuk&langs_count=8&layout=compact&theme=transparent&title_color=a78bfa&text_color=8b949e&hide_border=true
+          options: username=Nikita-Lysiuk&layout=compact&langs_count=8&hide=html,css&exclude_repo=PodstawyProgramowania,OOP-university-exercises,aroma_shop,linked-blog-starter-md&${{ env.THEME }}
           path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
+      # ---------- repo pins ----------
       - name: Pin Fluid-Engine
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: pin
-          options: username=Nikita-Lysiuk&repo=Fluid-Engine&theme=transparent&title_color=ffffff&text_color=a78bfa&icon_color=a78bfa&description_lines_count=2
+          options: username=Nikita-Lysiuk&repo=Fluid-Engine&description_lines_count=2&title_color=ffffff&theme=transparent&hide_border=true&text_color=a78bfa&icon_color=a78bfa
           path: profile/pin-Fluid-Engine.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -42,7 +80,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: pin
-          options: username=Nikita-Lysiuk&repo=Vinyl-Store&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa&hide_border=true
+          options: username=Nikita-Lysiuk&repo=Vinyl-Store&${{ env.THEME }}
           path: profile/pin-Vinyl-Store.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -50,7 +88,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: pin
-          options: username=Nikita-Lysiuk&repo=egypt_adventure&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa&hide_border=true
+          options: username=Nikita-Lysiuk&repo=egypt_adventure&${{ env.THEME }}
           path: profile/pin-egypt_adventure.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -58,7 +96,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: pin
-          options: username=Nikita-Lysiuk&repo=PixelPatternsAI&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa&hide_border=true
+          options: username=Nikita-Lysiuk&repo=PixelPatternsAI&${{ env.THEME }}
           path: profile/pin-PixelPatternsAI.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -66,14 +104,19 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: pin
-          options: username=Nikita-Lysiuk&repo=spring-library&theme=transparent&title_color=a78bfa&text_color=8b949e&icon_color=a78bfa&hide_border=true
+          options: username=Nikita-Lysiuk&repo=spring-library&${{ env.THEME }}
           path: profile/pin-spring-library.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # ---------- commit ----------
       - name: Commit changes
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@users.noreply.github.com"
-          git add profile/*.svg
-          git commit -m "Update README cards" || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile
+          if git diff --cached --quiet; then
+            echo "No card changes today"
+            exit 0
+          fi
+          git commit -m "chore: refresh profile cards"
           git push

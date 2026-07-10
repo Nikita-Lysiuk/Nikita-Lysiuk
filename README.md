@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- HERO BANNER — custom SVG -->
-<img src="https://raw.githubusercontent.com/Nikita-Lysiuk/Nikita-Lysiuk/main/banner.svg" width="100%" alt="Nikita Lysiuk — graphics programmer / game developer"/>
+<img src="banner.svg" width="100%" alt="Nikita Lysiuk — graphics programmer / game developer"/>
 
 </div>
 
@@ -25,7 +25,7 @@
 
 <!---------- PHILOSOPHY ---------->
 <div align="center">
-<img src="https://raw.githubusercontent.com/Nikita-Lysiuk/Nikita-Lysiuk/main/divider_philosophy.svg" width="100%" alt="philosophy"/>
+<img src="divider_philosophy.svg" width="100%" alt="philosophy"/>
 </div>
 
 ```
@@ -41,9 +41,20 @@ The long game: build the studio that makes it.
 
 <br/>
 
+<!---------- STACK ---------->
+<div align="center">
+<img src="divider_stack.svg" width="100%" alt="stack"/>
+</div>
+
+<div align="center">
+<img src="stack.svg" width="100%" alt="languages: rust, c++, java, typescript, python · graphics: vulkan, glsl, compute, simd, ecs · backend: spring, nestjs, postgres, stripe, aws s3 · toolbox: cmake, docker, git, linux"/>
+</div>
+
+<br/>
+
 <!---------- WHAT I CARE ABOUT ---------->
 <div align="center">
-<img src="https://raw.githubusercontent.com/Nikita-Lysiuk/Nikita-Lysiuk/main/divider_values.svg" width="100%" alt="what i care about"/>
+<img src="divider_values.svg" width="100%" alt="what i care about"/>
 </div>
 
 <br/>
@@ -79,7 +90,7 @@ The long game: build the studio that makes it.
 
 <!---------- STATUS ---------->
 <div align="center">
-<img src="https://raw.githubusercontent.com/Nikita-Lysiuk/Nikita-Lysiuk/main/divider_status.svg" width="100%" alt="currently"/>
+<img src="divider_status.svg" width="100%" alt="currently"/>
 </div>
 
 <br/>
@@ -88,8 +99,8 @@ The long game: build the studio that makes it.
 
 | | status | |
 |:---:|:---|:---|
-| 🔴 | **building** | something you'll eventually play |
-| 🟡 | **learning** | things that don't show up on job postings |
+| 🔴 | **building** | [Fluid-Engine](https://github.com/Nikita-Lysiuk/Fluid-Engine) — fluid simulation in Rust + Vulkan, chasing CPU/GPU parallelism |
+| 🟡 | **learning** | GPU compute, engine architecture — things that don't show up on job postings |
 | 🟢 | **shipping** | production code that solves real problems |
 
 </div>
@@ -98,7 +109,7 @@ The long game: build the studio that makes it.
 
 <!---------- SELECTED WORK ---------->
 <div align="center">
-<img src="https://raw.githubusercontent.com/Nikita-Lysiuk/Nikita-Lysiuk/main/divider_work.svg" width="100%" alt="selected work"/>
+<img src="divider_work.svg" width="100%" alt="selected work"/>
 </div>
 
 <br/>
@@ -123,7 +134,7 @@ The long game: build the studio that makes it.
 
 <!---------- STATS ---------->
 <div align="center">
-<img src="https://raw.githubusercontent.com/Nikita-Lysiuk/Nikita-Lysiuk/main/divider_stats.svg" width="100%" alt="stats"/>
+<img src="divider_stats.svg" width="100%" alt="stats"/>
 </div>
 
 <br/>
@@ -132,9 +143,25 @@ The long game: build the studio that makes it.
 
 [![GitHub Stats](./profile/stats.svg)](https://github.com/Nikita-Lysiuk)&nbsp;[![Top Langs](./profile/top-langs.svg)](https://github.com/Nikita-Lysiuk)
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Nikita-Lysiuk&theme=react-dark&hide_border=true&area=true&bg_color=0d0d18&color=a78bfa&line=7c3aed&point=ffffff)](https://github.com/Nikita-Lysiuk)
+[![GitHub Streak](https://streak-stats.demolab.com?user=Nikita-Lysiuk&hide_border=true&background=00000000&ring=7C3AED&fire=A78BFA&currStreakNum=FFFFFF&currStreakLabel=A78BFA&sideNums=A78BFA&sideLabels=8B949E&dates=6B7280&stroke=1A1A2E)](https://github.com/Nikita-Lysiuk)
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Nikita-Lysiuk&hide_border=true&area=true&bg_color=0a0a0f&color=a78bfa&line=7c3aed&point=ffffff&area_color=7c3aed)](https://github.com/Nikita-Lysiuk)
+
+<img src="./profile/snake.svg" width="100%" alt="contribution snake"/>
 
 </div>
+
+<br/>
+
+<!---------- RECENT ACTIVITY ---------->
+<div align="center">
+<img src="divider_activity.svg" width="100%" alt="recent activity"/>
+</div>
+
+<br/>
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 <br/>
 

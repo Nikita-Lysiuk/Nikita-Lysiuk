@@ -1,0 +1,65 @@
+<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7c3aed" stroke-width="0.3" opacity="0.25"/>
+    </pattern>
+    <linearGradient id="fade-left" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0a0f" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#0a0a0f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade-right" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="70%" stop-color="#0a0a0f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .row { animation: rowIn 0.7s ease-out backwards; }
+    .r0 { animation-delay: 0.1s; }
+    .r1 { animation-delay: 0.35s; }
+    .r2 { animation-delay: 0.6s; }
+    .r3 { animation-delay: 0.85s; }
+    @keyframes rowIn { from { opacity: 0; } to { opacity: 1; } }
+    .cursor { animation: blink 1.2s steps(1) infinite; }
+    @keyframes blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
+  </style>
+  <rect width="900" height="240" fill="#0a0a0f"/>
+  <rect width="900" height="240" fill="url(#grid)"/>
+  <rect width="900" height="240" fill="url(#fade-left)"/>
+  <rect width="900" height="240" fill="url(#fade-right)"/>
+  <line x1="60" y1="16" x2="840" y2="16" stroke="#7c3aed" stroke-width="0.5" opacity="0.35"/>
+  <line x1="60" y1="224" x2="840" y2="224" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
+  <text x="840" y="214" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ffffff" opacity="0.12" letter-spacing="2">TOOLS I REACH FOR</text>
+
+  <g class="row r0">
+    <text x="60" y="59" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="2" opacity="0.9">languages_</text>
+    <rect x="192" y="43" width="57" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="192" y="43" width="57" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="220" y="60" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">rust</text>
+    <rect x="259" y="43" width="50" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="259" y="43" width="50" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="284" y="60" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">c++</text>
+    <rect x="319" y="43" width="57" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="319" y="43" width="57" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="348" y="60" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">java</text>
+    <rect x="386" y="43" width="98" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="386" y="43" width="98" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="435" y="60" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">typescript</text>
+    <rect x="494" y="43" width="71" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="494" y="43" width="71" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="530" y="60" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">python</text>
+  </g>
+  <g class="row r1">
+    <text x="60" y="105" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="2" opacity="0.9">graphics_</text>
+    <rect x="192" y="89" width="71" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="192" y="89" width="71" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="228" y="106" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">vulkan</text>
+    <rect x="273" y="89" width="57" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="273" y="89" width="57" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="302" y="106" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">glsl</text>
+    <rect x="340" y="89" width="78" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="340" y="89" width="78" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="379" y="106" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">compute</text>
+    <rect x="428" y="89" width="57" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="428" y="89" width="57" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="456" y="106" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">simd</text>
+    <rect x="495" y="89" width="50" height="26" rx="13" fill="#7c3aed" opacity="0.14"/><rect x="495" y="89" width="50" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/><text x="520" y="106" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">ecs</text>
+  </g>
+  <g class="row r2">
+    <text x="60" y="151" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="2" opacity="0.9">backend_</text>
+    <rect x="192" y="135" width="71" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="192" y="135" width="71" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="228" y="152" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">spring</text>
+    <rect x="273" y="135" width="71" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="273" y="135" width="71" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="308" y="152" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">nestjs</text>
+    <rect x="354" y="135" width="84" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="354" y="135" width="84" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="396" y="152" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">postgres</text>
+    <rect x="448" y="135" width="71" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="448" y="135" width="71" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="484" y="152" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">stripe</text>
+    <rect x="529" y="135" width="71" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="529" y="135" width="71" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="564" y="152" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">aws s3</text>
+  </g>
+  <g class="row r3">
+    <text x="60" y="197" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="2" opacity="0.9">toolbox_</text>
+    <rect x="192" y="181" width="64" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="192" y="181" width="64" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="224" y="198" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">cmake</text>
+    <rect x="266" y="181" width="71" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="266" y="181" width="71" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="302" y="198" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">docker</text>
+    <rect x="347" y="181" width="50" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="347" y="181" width="50" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="372" y="198" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">git</text>
+    <rect x="407" y="181" width="64" height="26" rx="13" fill="#ffffff" opacity="0.04"/><rect x="407" y="181" width="64" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/><text x="439" y="198" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.55" letter-spacing="0.5">linux</text>
+    <rect class="cursor" x="483" y="185" width="7" height="14" fill="#a78bfa" opacity="0.8"/>
+  </g>
+</svg>

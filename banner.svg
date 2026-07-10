@@ -28,7 +28,9 @@
   <rect width="900" height="280" fill="url(#grid)"/>
 
   <!-- Glow center -->
-  <rect width="900" height="280" fill="url(#glow)"/>
+  <rect width="900" height="280" fill="url(#glow)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite"/>
+  </rect>
 
   <!-- Edge fades -->
   <rect width="900" height="280" fill="url(#fade-left)"/>
@@ -47,6 +49,9 @@
   <!-- Main name -->
   <text x="60" y="130" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="-2" opacity="0.97">Nikita</text>
   <text x="60" y="210" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#7c3aed" letter-spacing="-2" opacity="0.97">Lysiuk</text>
+  <rect x="332" y="158" width="22" height="52" fill="#7c3aed" opacity="0.85">
+    <animate attributeName="opacity" values="0.85;0.85;0;0" keyTimes="0;0.5;0.51;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
 
   <!-- Tagline pills -->
   <rect x="430" y="100" width="158" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
