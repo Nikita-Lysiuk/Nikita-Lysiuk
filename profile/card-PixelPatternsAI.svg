@@ -1,0 +1,17 @@
+<svg width="440" height="150" viewBox="0 0 440 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.09"/>
+      <stop offset="45%" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="439" height="149" rx="12" fill="#0d0d16"/>
+  <rect x="0.5" y="0.5" width="439" height="149" rx="12" fill="url(#sheen)"/>
+  <rect x="0.5" y="0.5" width="439" height="149" rx="12" fill="none" stroke="#23233a" stroke-width="1"/>
+  <text x="24" y="40" font-family="'JetBrains Mono', monospace" font-size="14" fill="#7c3aed" font-weight="700">&#10095;</text>
+  <text x="42" y="40" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#e6e6ec">PixelPatternsAI</text>
+  <text x="24" y="72" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">A neural network built from scratch in pure NumPy — no</text>
+  <text x="24" y="91" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">frameworks, just the math.</text>
+  <circle cx="29" cy="122" r="5" fill="#3572A5"/><text x="42" y="126" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">Python</text>
+  <text x="416" y="126" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" opacity="0.8">view &#8594;</text>
+</svg>

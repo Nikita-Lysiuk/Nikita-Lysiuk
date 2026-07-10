@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/stats.yml"
+      - "scripts/render_cards.py"
 
 concurrency:
   group: refresh-profile
@@ -29,16 +30,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # ---------- recent activity feed (writes into README markers) ----------
-      - name: Recent activity
-        uses: jamesgeorge007/github-activity-readme@master
+      # ---------- custom project cards ----------
+      - name: Render project cards
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
-        with:
-          GH_USERNAME: Nikita-Lysiuk
-          TARGET_FILE: README.md
-          MAX_LINES: 6
-          COMMIT_MSG: "chore: refresh recent activity"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/render_cards.py
 
       # ---------- contribution snake ----------
       - name: Contribution snake
@@ -63,50 +59,9 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=Nikita-Lysiuk&layout=compact&langs_count=8&hide=html,css&exclude_repo=PodstawyProgramowania,OOP-university-exercises,aroma_shop,linked-blog-starter-md&${{ env.THEME }}
+          options: username=Nikita-Lysiuk&layout=compact&langs_count=8&card_width=440&hide=html,css&exclude_repo=PodstawyProgramowania,OOP-university-exercises,aroma_shop,linked-blog-starter-md&${{ env.THEME }}
           path: profile/top-langs.svg
           token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
-
-      # ---------- repo pins ----------
-      - name: Pin Fluid-Engine
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=Nikita-Lysiuk&repo=Fluid-Engine&description_lines_count=2&title_color=ffffff&theme=transparent&hide_border=true&text_color=a78bfa&icon_color=a78bfa
-          path: profile/pin-Fluid-Engine.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Pin Vinyl-Store
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=Nikita-Lysiuk&repo=Vinyl-Store&${{ env.THEME }}
-          path: profile/pin-Vinyl-Store.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Pin Egypt-Adventure
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=Nikita-Lysiuk&repo=egypt_adventure&${{ env.THEME }}
-          path: profile/pin-egypt_adventure.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Pin PixelPatternsAI
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=Nikita-Lysiuk&repo=PixelPatternsAI&${{ env.THEME }}
-          path: profile/pin-PixelPatternsAI.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Pin Spring-Library
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=Nikita-Lysiuk&repo=spring-library&${{ env.THEME }}
-          path: profile/pin-spring-library.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       # ---------- commit ----------
       - name: Commit changes

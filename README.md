@@ -48,6 +48,13 @@ The long game: build the studio that makes it.
 
 <div align="center">
 <img src="stack.svg" width="100%" alt="languages: rust, c++, java, typescript, python · graphics: vulkan, glsl, compute, simd, ecs · backend: spring, nestjs, postgres, stripe, aws s3 · toolbox: cmake, docker, git, linux"/>
+
+<br/>
+
+<sub>what the repos say:</sub>
+
+[![Top Langs](./profile/top-langs.svg)](https://github.com/Nikita-Lysiuk?tab=repositories)
+
 </div>
 
 <br/>
@@ -88,25 +95,6 @@ The long game: build the studio that makes it.
 
 <br/>
 
-<!---------- STATUS ---------->
-<div align="center">
-<img src="divider_status.svg" width="100%" alt="currently"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-| | status | |
-|:---:|:---|:---|
-| 🔴 | **building** | [Fluid-Engine](https://github.com/Nikita-Lysiuk/Fluid-Engine) — fluid simulation in Rust + Vulkan, chasing CPU/GPU parallelism |
-| 🟡 | **learning** | GPU compute, engine architecture — things that don't show up on job postings |
-| 🟢 | **shipping** | production code that solves real problems |
-
-</div>
-
-<br/>
-
 <!---------- SELECTED WORK ---------->
 <div align="center">
 <img src="divider_work.svg" width="100%" alt="selected work"/>
@@ -117,18 +105,37 @@ The long game: build the studio that makes it.
 <!-- Featured project — full width -->
 <div align="center">
 
-[![Fluid-Engine](./profile/pin-Fluid-Engine.svg)](https://github.com/Nikita-Lysiuk/Fluid-Engine)
+[<img src="./profile/card-Fluid-Engine.svg" width="100%" alt="Fluid-Engine"/>](https://github.com/Nikita-Lysiuk/Fluid-Engine)
 
 </div>
 
 <!-- 2x2 grid -->
-<div align="center">
+<table width="100%">
+<tr>
+<td width="50%">
 
-[![Vinyl-Store](./profile/pin-Vinyl-Store.svg)](https://github.com/Nikita-Lysiuk/Vinyl-Store)&nbsp;[![egypt_adventure](./profile/pin-egypt_adventure.svg)](https://github.com/Nikita-Lysiuk/egypt_adventure)
+[<img src="./profile/card-Vinyl-Store.svg" width="100%" alt="Vinyl-Store"/>](https://github.com/Nikita-Lysiuk/Vinyl-Store)
 
-[![PixelPatternsAI](./profile/pin-PixelPatternsAI.svg)](https://github.com/Nikita-Lysiuk/PixelPatternsAI)&nbsp;[![spring-library](./profile/pin-spring-library.svg)](https://github.com/Nikita-Lysiuk/spring-library)
+</td>
+<td width="50%">
 
-</div>
+[<img src="./profile/card-egypt_adventure.svg" width="100%" alt="egypt_adventure"/>](https://github.com/Nikita-Lysiuk/egypt_adventure)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+[<img src="./profile/card-PixelPatternsAI.svg" width="100%" alt="PixelPatternsAI"/>](https://github.com/Nikita-Lysiuk/PixelPatternsAI)
+
+</td>
+<td width="50%">
+
+[<img src="./profile/card-spring-library.svg" width="100%" alt="spring-library"/>](https://github.com/Nikita-Lysiuk/spring-library)
+
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -139,35 +146,37 @@ The long game: build the studio that makes it.
 
 <br/>
 
+<table width="100%">
+<tr>
+<td width="50%" align="center">
+
+[<img src="./profile/stats.svg" width="100%" alt="GitHub stats"/>](https://github.com/Nikita-Lysiuk)
+
+</td>
+<td width="50%" align="center">
+
+[<img src="https://streak-stats.demolab.com?user=Nikita-Lysiuk&hide_border=true&background=00000000&ring=7C3AED&fire=A78BFA&currStreakNum=FFFFFF&currStreakLabel=A78BFA&sideNums=A78BFA&sideLabels=8B949E&dates=6B7280&stroke=1A1A2E" width="100%" alt="GitHub streak"/>](https://github.com/Nikita-Lysiuk)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!---------- CONTRIBUTIONS ---------->
 <div align="center">
+<img src="divider_contributions.svg" width="100%" alt="contributions"/>
+</div>
 
-[![GitHub Stats](./profile/stats.svg)](https://github.com/Nikita-Lysiuk)&nbsp;[![Top Langs](./profile/top-langs.svg)](https://github.com/Nikita-Lysiuk)
+<br/>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Nikita-Lysiuk&hide_border=true&background=00000000&ring=7C3AED&fire=A78BFA&currStreakNum=FFFFFF&currStreakLabel=A78BFA&sideNums=A78BFA&sideLabels=8B949E&dates=6B7280&stroke=1A1A2E)](https://github.com/Nikita-Lysiuk)
+<div align="center">
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Nikita-Lysiuk&hide_border=true&area=true&bg_color=0a0a0f&color=a78bfa&line=7c3aed&point=ffffff&area_color=7c3aed)](https://github.com/Nikita-Lysiuk)
 
 <img src="./profile/snake.svg" width="100%" alt="contribution snake"/>
 
 </div>
-
-<br/>
-
-<!---------- RECENT ACTIVITY ---------->
-<div align="center">
-<img src="divider_activity.svg" width="100%" alt="recent activity"/>
-</div>
-
-<br/>
-
-<!--START_SECTION:activity-->
-1. 💪 Opened PR [#17](https://github.com/Sirttas/DataPack-Anvil/pull/17) in [Sirttas/DataPack-Anvil](https://github.com/Sirttas/DataPack-Anvil)
-2. 🗣 Commented on [#17](https://github.com/Sirttas/DataPack-Anvil/pull/17#issuecomment-4797952927) in [Sirttas/DataPack-Anvil](https://github.com/Sirttas/DataPack-Anvil)
-3. 🎉 Merged PR [#4](https://github.com/TetSigma/brama/pull/4) in [TetSigma/brama](https://github.com/TetSigma/brama)
-4. 💪 Opened PR [#4](https://github.com/TetSigma/brama/pull/4) in [TetSigma/brama](https://github.com/TetSigma/brama)
-5. 🎉 Merged PR [#2](https://github.com/TetSigma/brama/pull/2) in [TetSigma/brama](https://github.com/TetSigma/brama)
-6. 💪 Opened PR [#2](https://github.com/TetSigma/brama/pull/2) in [TetSigma/brama](https://github.com/TetSigma/brama)
-<!--END_SECTION:activity-->
 
 <br/>
 
