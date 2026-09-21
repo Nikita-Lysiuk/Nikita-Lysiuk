@@ -1,87 +1,20 @@
-<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="224" viewBox="0 0 900 224" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Nikita Lysiuk</title>
+  <desc id="description">Full-stack developer with a background in React Native. A cyan wireframe surface reflects an interest in graphics and simulation.</desc>
   <defs>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7c3aed" stroke-width="0.3" opacity="0.25"/>
-    </pattern>
-    <linearGradient id="fade-left" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0a0a0f" stop-opacity="1"/>
-      <stop offset="30%" stop-color="#0a0a0f" stop-opacity="0"/>
+    <clipPath id="surface"><rect x="560" y="0" width="340" height="224" rx="12"/></clipPath>
+    <linearGradient id="mesh" x1="560" y1="112" x2="900" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78c8ce" stop-opacity="0.12"/>
+      <stop offset="0.65" stop-color="#78c8ce" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#78c8ce" stop-opacity="0.25"/>
     </linearGradient>
-    <linearGradient id="fade-right" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="70%" stop-color="#0a0a0f" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
-    </linearGradient>
-    <linearGradient id="fade-bottom" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="60%" stop-color="#0a0a0f" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="0"/>
-    </radialGradient>
   </defs>
-
-  <!-- Background -->
-  <rect width="900" height="280" fill="#0a0a0f"/>
-
-  <!-- Grid -->
-  <rect width="900" height="280" fill="url(#grid)"/>
-
-  <!-- Glow center -->
-  <rect width="900" height="280" fill="url(#glow)">
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Edge fades -->
-  <rect width="900" height="280" fill="url(#fade-left)"/>
-  <rect width="900" height="280" fill="url(#fade-right)"/>
-  <rect width="900" height="280" fill="url(#fade-bottom)"/>
-
-  <!-- Decorative corner tag -->
-  <text x="860" y="24" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.12" letter-spacing="2">v2.0 // NIKITA_LYSIUK</text>
-
-  <!-- Accent line top -->
-  <line x1="60" y1="44" x2="840" y2="44" stroke="#7c3aed" stroke-width="0.5" opacity="0.4"/>
-
-  <!-- Label -->
-  <text x="60" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="3" opacity="0.9">// DEVELOPER &amp; BUILDER</text>
-
-  <!-- Main name -->
-  <text x="60" y="130" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="-2" opacity="0.97">Nikita</text>
-  <text x="60" y="210" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#7c3aed" letter-spacing="-2" opacity="0.97">Lysiuk</text>
-  <rect x="332" y="158" width="22" height="52" fill="#7c3aed" opacity="0.85">
-    <animate attributeName="opacity" values="0.85;0.85;0;0" keyTimes="0;0.5;0.51;1" dur="1.2s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Tagline pills -->
-  <rect x="430" y="100" width="158" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
-  <rect x="430" y="100" width="158" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
-  <text x="509" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">graphics programming</text>
-
-  <rect x="596" y="100" width="138" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
-  <rect x="596" y="100" width="138" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
-  <text x="665" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">game development</text>
-
-  <rect x="430" y="136" width="82" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="430" y="136" width="82" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="471" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">mobile</text>
-
-  <rect x="520" y="136" width="78" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="520" y="136" width="78" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="559" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">systems</text>
-
-  <rect x="606" y="136" width="92" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="606" y="136" width="92" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="652" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">low-level</text>
-
-  <!-- Tagline text -->
-  <text x="430" y="195" font-family="'JetBrains Mono', monospace" font-size="12" fill="#ffffff" opacity="0.25" letter-spacing="0.5">rendering frames · building systems</text>
-  <text x="430" y="213" font-family="'JetBrains Mono', monospace" font-size="12" fill="#7c3aed" opacity="0.6" letter-spacing="0.5">shipping games</text>
-
-  <!-- Accent line bottom -->
-  <line x1="60" y1="248" x2="840" y2="248" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
-
-  <!-- Location -->
-  <text x="60" y="264" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.2" letter-spacing="2">LUBLIN // PL</text>
-  <text x="840" y="264" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.2" letter-spacing="2">CS @ UMCS</text>
+  <rect width="900" height="224" rx="12" fill="#161b22"/>
+  <g clip-path="url(#surface)" stroke="url(#mesh)" stroke-width="1.1">
+    <path d="M554 84C646 166 706 -30 916 74M550 98C646 181 706 -12 916 88M546 112C646 196 706 6 916 102M542 126C646 211 706 24 916 116M538 140C646 226 706 42 916 130M534 154C646 241 706 60 916 144M530 168C646 256 706 78 916 158M526 182C646 271 706 96 916 172M522 196C646 286 706 114 916 186"/>
+    <path d="M575 100L543 211M598 107L571 221M621 104L599 222M644 92L628 214M667 74L657 199M690 57L686 183M713 44L715 168M736 36L744 158M759 34L773 154M782 35L802 155M805 40L831 160M828 47L860 167M851 55L889 176M874 63L918 185"/>
+  </g>
+  <text x="40" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="48" font-weight="650" letter-spacing="-1.8" fill="#eef2f6">Nikita Lysiuk</text>
+  <text x="42" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" fill="#78c8ce">Full-stack developer</text>
+  <text x="42" y="171" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#a8b3bf">Started in React Native. Now working across the stack.</text>
 </svg>
