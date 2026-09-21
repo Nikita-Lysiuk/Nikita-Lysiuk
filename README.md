@@ -1,60 +1,162 @@
-<img src="banner.svg" width="100%" alt="Nikita Lysiuk — full-stack developer, with a background in React Native"/>
+<div align="center">
 
-[LinkedIn](https://linkedin.com/in/nikita-lysiuk-7682b42ab/) · [X](https://x.com/Nikita_lysiuk06) · [Stack Overflow](https://stackoverflow.com/users/23113955/nikita)
+<!-- HERO BANNER — custom SVG -->
+<img src="banner.svg" width="100%" alt="Nikita Lysiuk — full-stack developer, React Native background, graphics and simulation on the side"/>
 
-I started as a React Native developer. These days I work across the stack:
-mobile apps, web interfaces, backend services, and AI features.
+</div>
 
-My commercial work includes LLM applications: retrieval-augmented generation
-(RAG), structured outputs, tool calling, evaluation, and token and cost tracking.
-I've been applying ideas from Chip Huyen's *AI Engineering* to that work.
-The project is under NDA, so I keep its name and details private.
+<!---------- TYPING HEADLINE ---------->
+<div align="center">
+<br/>
 
-I'm also contributing to a side project's backend, learning Go through hands-on
-work with HTTP APIs and PostgreSQL. Outside that, I spend time on graphics,
-fluid simulation, and game development in Rust and C++.
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&repeat=true&width=600&lines=full-stack+developer;started+in+react+native+%E2%80%94+now+across+the+stack;shipping+llm+features+in+production;rust+%2B+c%2B%2B+for+graphics+and+simulation)](https://github.com/Nikita-Lysiuk)
 
-## Selected projects
+<br/>
 
-[<img src="profile/card-Fluid-Engine.svg" width="100%" alt="Fluid-Engine — real-time DFSPH fluid simulation in Rust with Vulkan rendering. Diploma project."/>](https://github.com/Nikita-Lysiuk/Fluid-Engine)
+<!---------- SOCIAL BADGES ---------->
+[![](https://img.shields.io/badge/-GitHub-0d1117?style=for-the-badge&logo=github&logoColor=a78bfa)](https://github.com/Nikita-Lysiuk)&nbsp;
+[![](https://img.shields.io/badge/-LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=a78bfa)](https://linkedin.com/in/nikita-lysiuk-7682b42ab/)&nbsp;
+[![](https://img.shields.io/badge/-X%20%2F%20Twitter-0d1117?style=for-the-badge&logo=x&logoColor=a78bfa)](https://x.com/Nikita_lysiuk06)&nbsp;
+[![](https://img.shields.io/badge/-StackOverflow-0d1117?style=for-the-badge&logo=stackoverflow&logoColor=a78bfa)](https://stackoverflow.com/users/23113955/nikita)
 
+</div>
+
+<br/>
+
+<!---------- PHILOSOPHY ---------->
+<div align="center">
+<img src="divider_philosophy.svg" width="100%" alt="philosophy"/>
+</div>
+
+<div align="center">
+<img src="philosophy.svg" width="100%" alt="I started in React Native and moved across the stack: mobile, web, backend, AI features. My commercial work is LLM applications — retrieval, structured outputs, tool calling, evaluation, token and cost tracking — under NDA, so no names. I am learning Go on a side project backend, and Rust and C++ carry the graphics work."/>
+</div>
+
+<br/>
+
+<!---------- STACK ---------->
+<div align="center">
+<img src="divider_stack.svg" width="100%" alt="stack"/>
+</div>
+
+<div align="center">
+<img src="stack.svg" width="100%" alt="mobile and web: typescript, react native, expo, react · backend: node.js, nestjs, postgres, trpc, docker · ai: rag, embeddings, structured outputs, tool calling, evals · graphics: rust, c++, vulkan, glsl · learning: go, chi, pgx"/>
+
+<br/>
+
+<sub>what the repos say:</sub>
+
+[![Top Langs](./profile/top-langs.svg)](https://github.com/Nikita-Lysiuk?tab=repositories)
+
+</div>
+
+<br/>
+
+<!---------- WHAT I CARE ABOUT ---------->
+<div align="center">
+<img src="divider_values.svg" width="100%" alt="what i work on"/>
+</div>
+
+<br/>
+
+<div align="center">
+<img src="values.svg" width="100%" alt="product — features end to end, mobile to database · ai features — retrieval, tools, evals, cost per request · graphics — rust and c++, vulkan, fluid simulation"/>
+</div>
+
+<br/>
+
+<!---------- SELECTED WORK ---------->
+<div align="center">
+<img src="divider_work.svg" width="100%" alt="selected work"/>
+</div>
+
+<br/>
+
+<!-- Featured project — full width -->
+<div align="center">
+
+[<img src="./profile/card-Fluid-Engine.svg" width="100%" alt="Fluid-Engine"/>](https://github.com/Nikita-Lysiuk/Fluid-Engine)
+
+</div>
+
+<!-- 2x2 grid -->
 <table width="100%">
 <tr>
 <td width="50%">
 
-[<img src="profile/card-Financial-Tracker.svg" width="100%" alt="Financial-Tracker — personal finance app with a React Native / Expo client and a Rust / Axum backend."/>](https://github.com/Nikita-Lysiuk/Financial-Tracker)
+[<img src="./profile/card-Vinyl-Store.svg" width="100%" alt="Vinyl-Store"/>](https://github.com/Nikita-Lysiuk/Vinyl-Store)
 
 </td>
 <td width="50%">
 
-[<img src="profile/card-Vinyl-Store.svg" width="100%" alt="Vinyl-Store — REST API for a record store with auth, orders, Stripe payments, and AWS S3."/>](https://github.com/Nikita-Lysiuk/Vinyl-Store)
+[<img src="./profile/card-egypt_adventure.svg" width="100%" alt="egypt_adventure"/>](https://github.com/Nikita-Lysiuk/egypt_adventure)
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-[<img src="profile/card-egypt_adventure.svg" width="100%" alt="egypt_adventure — C++ survival horror with procedural catacombs where light is a resource."/>](https://github.com/Nikita-Lysiuk/egypt_adventure)
+[<img src="./profile/card-PixelPatternsAI.svg" width="100%" alt="PixelPatternsAI"/>](https://github.com/Nikita-Lysiuk/PixelPatternsAI)
 
 </td>
 <td width="50%">
 
-[<img src="profile/card-PixelPatternsAI.svg" width="100%" alt="PixelPatternsAI — neural network written in NumPy to classify 2x2 pixel patterns."/>](https://github.com/Nikita-Lysiuk/PixelPatternsAI)
+[<img src="./profile/card-Financial-Tracker.svg" width="100%" alt="Financial-Tracker"/>](https://github.com/Nikita-Lysiuk/Financial-Tracker)
 
 </td>
 </tr>
 </table>
 
-## Tools I work with
+<br/>
 
-| Area | Tools |
-| --- | --- |
-| Mobile & web | TypeScript, React Native, Expo, React |
-| Backend & data | Node.js, PostgreSQL, REST, tRPC, Docker |
-| AI applications | Retrieval, embeddings, structured outputs, tool calling, evaluation |
-| Graphics & simulation | Rust, C++, Vulkan, GLSL |
-| Learning through a side project | Go, chi, pgx |
+<!---------- STATS ---------->
+<div align="center">
+<img src="divider_stats.svg" width="100%" alt="stats"/>
+</div>
 
-## GitHub activity
+<br/>
 
-[<img src="profile/activity.svg" width="100%" alt="GitHub contributions per week over the last 26 weeks; each bar shows one week, and the latest week is partial."/>](https://github.com/Nikita-Lysiuk?tab=overview)
+<table width="100%">
+<tr>
+<td width="50%" align="center">
+
+[<img src="./profile/stats.svg" width="100%" alt="GitHub stats"/>](https://github.com/Nikita-Lysiuk)
+
+</td>
+<td width="50%" align="center">
+
+[<img src="https://streak-stats.demolab.com?user=Nikita-Lysiuk&hide_border=true&background=00000000&ring=7C3AED&fire=A78BFA&currStreakNum=FFFFFF&currStreakLabel=A78BFA&sideNums=A78BFA&sideLabels=8B949E&dates=6B7280&stroke=1A1A2E" width="100%" alt="GitHub streak"/>](https://github.com/Nikita-Lysiuk)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!---------- CONTRIBUTIONS ---------->
+<div align="center">
+<img src="divider_contributions.svg" width="100%" alt="contributions"/>
+</div>
+
+<br/>
+
+<div align="center">
+
+[<img src="./profile/activity.svg" width="100%" alt="weekly GitHub contributions over the last 26 weeks; the latest week may be partial"/>](https://github.com/Nikita-Lysiuk?tab=overview)
+
+<img src="./profile/snake.svg" width="100%" alt="contribution snake"/>
+
+</div>
+
+<br/>
+
+<!---------- FOOTER ---------->
+<div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=Nikita-Lysiuk&style=flat-square&color=7c3aed&label=profile+views&labelColor=0d0d18"/>
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7c3aed&height=80&section=footer" width="100%"/>
+
+</div>

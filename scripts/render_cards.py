@@ -13,12 +13,13 @@ import urllib.request
 USER = "Nikita-Lysiuk"
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "profile")
 
-BG = "#161b22"
-BORDER = "#303a46"
-ACCENT = "#78c8ce"
-ACCENT_LIGHT = "#b3e3e6"
-TEXT = "#eef2f6"
-GREY = "#a8b3bf"
+BG = "#0d0d16"
+BORDER = "#23233a"
+VIOLET = "#7c3aed"
+VIOLET_LT = "#a78bfa"
+VIOLET_XLT = "#c4b5fd"
+TEXT = "#e6e6ec"
+GREY = "#8b949e"
 
 LANG_COLORS = {
     "Rust": "#dea584",
@@ -36,28 +37,28 @@ REPOS = [
         "name": "Fluid-Engine",
         "featured": True,
         "tag": "diploma project",
-        "tagline": "Real-time DFSPH fluid simulation in Rust with Vulkan rendering. "
-                   "Exploring compute pipelines and CPU/GPU parallelism.",
+        "tagline": "Real-time DFSPH fluid simulation in Rust with Vulkan rendering — "
+                   "compute pipelines, CPU/GPU parallelism, performance first.",
     },
     {
         "name": "Financial-Tracker",
-        "tagline": "Personal finance app — React Native / Expo client "
-                   "with a Rust / Axum backend.",
+        "tagline": "Personal finance app — React Native / Expo client, "
+                   "Rust / Axum backend.",
     },
     {
         "name": "Vinyl-Store",
-        "tagline": "REST API for a record store — auth, orders, "
+        "tagline": "REST API for a vinyl record store — auth, orders, reviews, "
                    "Stripe payments, AWS S3.",
     },
     {
         "name": "egypt_adventure",
-        "tagline": "C++ survival horror with procedural catacombs "
-                   "where light is a resource.",
+        "tagline": "Roguelike survival horror in C++ — procedural catacombs "
+                   "where light itself is a resource.",
     },
     {
         "name": "PixelPatternsAI",
-        "tagline": "Neural network written in NumPy to classify "
-                   "2x2 pixel patterns.",
+        "tagline": "A neural network built from scratch in pure NumPy — "
+                   "no frameworks, just the math.",
     },
 ]
 
@@ -95,8 +96,8 @@ def head(w, h):
     return f'''<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="{ACCENT}" stop-opacity="0.09"/>
-      <stop offset="45%" stop-color="{ACCENT}" stop-opacity="0"/>
+      <stop offset="0%" stop-color="{VIOLET}" stop-opacity="0.09"/>
+      <stop offset="45%" stop-color="{VIOLET}" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="12" fill="{BG}"/>
@@ -110,23 +111,23 @@ def lang_stars(x, y, lang, stars, anchor_end_x=None):
     if lang:
         color = LANG_COLORS.get(lang, GREY)
         parts.append(f'<circle cx="{x + 5}" cy="{y - 4}" r="5" fill="{color}"/>')
-        parts.append(f'<text x="{x + 18}" y="{y}" font-family="\'JetBrains Mono\', monospace" font-size="12.5" fill="{GREY}">{html.escape(lang)}</text>')
+        parts.append(f'<text x="{x + 18}" y="{y}" font-family="\'JetBrains Mono\', monospace" font-size="11.5" fill="{GREY}">{html.escape(lang)}</text>')
     if stars > 0 and anchor_end_x:
-        parts.append(f'<text x="{anchor_end_x}" y="{y}" text-anchor="end" font-family="\'JetBrains Mono\', monospace" font-size="12.5" fill="{ACCENT}">&#9733; {stars}</text>')
+        parts.append(f'<text x="{anchor_end_x}" y="{y}" text-anchor="end" font-family="\'JetBrains Mono\', monospace" font-size="11.5" fill="{VIOLET_LT}">&#9733; {stars}</text>')
     return "".join(parts)
 
 
 def card(repo, stars, lang):
     W, H = 440, 150
     name = html.escape(repo["name"])
-    lines = wrap(repo["tagline"], 46)
+    lines = wrap(repo["tagline"], 54)
     svg = head(W, H)
-    svg += f'  <text x="24" y="42" font-family="\'JetBrains Mono\', monospace" font-size="15" fill="{ACCENT}" font-weight="700">&#10095;</text>\n'
-    svg += f'  <text x="44" y="42" font-family="\'JetBrains Mono\', monospace" font-size="17" font-weight="700" fill="{TEXT}">{name}</text>\n'
+    svg += f'  <text x="24" y="40" font-family="\'JetBrains Mono\', monospace" font-size="14" fill="{VIOLET}" font-weight="700">&#10095;</text>\n'
+    svg += f'  <text x="42" y="40" font-family="\'JetBrains Mono\', monospace" font-size="15" font-weight="700" fill="{TEXT}">{name}</text>\n'
     for i, ln in enumerate(lines):
-        svg += f'  <text x="24" y="{76 + i * 22}" font-family="\'JetBrains Mono\', monospace" font-size="13" fill="{GREY}">{html.escape(ln)}</text>\n'
+        svg += f'  <text x="24" y="{72 + i * 19}" font-family="\'JetBrains Mono\', monospace" font-size="11.5" fill="{GREY}">{html.escape(ln)}</text>\n'
     svg += "  " + lang_stars(24, 126, lang, stars, anchor_end_x=352) + "\n"
-    svg += f'  <text x="416" y="126" text-anchor="end" font-family="\'JetBrains Mono\', monospace" font-size="12" fill="{ACCENT}" opacity="0.8">view &#8594;</text>\n'
+    svg += f'  <text x="416" y="126" text-anchor="end" font-family="\'JetBrains Mono\', monospace" font-size="11" fill="{VIOLET_LT}" opacity="0.8">view &#8594;</text>\n'
     svg += "</svg>\n"
     return svg
 
@@ -135,19 +136,19 @@ def featured_card(repo, stars, lang):
     W, H = 900, 176
     name = html.escape(repo["name"])
     tag = html.escape(repo.get("tag", "featured"))
-    lines = wrap(repo["tagline"], 84)
+    lines = wrap(repo["tagline"], 92)
     tag_w = round(36 + 7.8 * len(tag))
     svg = head(W, H)
-    svg += f'''  <text x="32" y="52" font-family="'JetBrains Mono', monospace" font-size="18" fill="{ACCENT}" font-weight="700">&#10095;</text>
+    svg += f'''  <text x="32" y="52" font-family="'JetBrains Mono', monospace" font-size="18" fill="{VIOLET}" font-weight="700">&#10095;</text>
   <text x="54" y="52" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="{TEXT}">{name}</text>
-  <rect x="{W - 32 - tag_w}" y="30" width="{tag_w}" height="28" rx="14" fill="{ACCENT}" opacity="0.16"/>
-  <rect x="{W - 32 - tag_w}" y="30" width="{tag_w}" height="28" rx="14" fill="none" stroke="{ACCENT}" stroke-width="1" opacity="0.6"/>
-  <text x="{W - 32 - tag_w / 2}" y="48" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="{ACCENT_LIGHT}" letter-spacing="1">{tag}</text>
+  <rect x="{W - 32 - tag_w}" y="30" width="{tag_w}" height="28" rx="14" fill="{VIOLET}" opacity="0.16"/>
+  <rect x="{W - 32 - tag_w}" y="30" width="{tag_w}" height="28" rx="14" fill="none" stroke="{VIOLET_LT}" stroke-width="1" opacity="0.6"/>
+  <text x="{W - 32 - tag_w / 2}" y="48" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="{VIOLET_XLT}" letter-spacing="1">{tag}</text>
 '''
     for i, ln in enumerate(lines):
-        svg += f'  <text x="32" y="{92 + i * 21}" font-family="\'JetBrains Mono\', monospace" font-size="16" fill="{GREY}">{html.escape(ln)}</text>\n'
+        svg += f'  <text x="32" y="{92 + i * 21}" font-family="\'JetBrains Mono\', monospace" font-size="12.5" fill="{GREY}">{html.escape(ln)}</text>\n'
     svg += "  " + lang_stars(32, 148, lang, stars, anchor_end_x=760) + "\n"
-    svg += f'  <text x="868" y="148" text-anchor="end" font-family="\'JetBrains Mono\', monospace" font-size="11.5" fill="{ACCENT}" opacity="0.8">view repo &#8594;</text>\n'
+    svg += f'  <text x="868" y="148" text-anchor="end" font-family="\'JetBrains Mono\', monospace" font-size="11.5" fill="{VIOLET_LT}" opacity="0.8">view repo &#8594;</text>\n'
     svg += "</svg>\n"
     return svg
 

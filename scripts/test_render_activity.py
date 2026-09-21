@@ -26,8 +26,9 @@ class ActivityTests(unittest.TestCase):
 
     def test_zero_activity_is_valid_and_has_no_false_bars(self):
         svg = ET.fromstring(render(calendar(count=0)))
-        rects = svg.findall(".//{http://www.w3.org/2000/svg}rect")
-        self.assertEqual(len(rects), 1)  # Only the background.
+        bars = [r for r in svg.findall(".//{http://www.w3.org/2000/svg}rect")
+                if r.get("class") == "bar"]
+        self.assertEqual(bars, [])  # Background and cursor only, no bars.
         self.assertIn("0 contributions", "".join(svg.itertext()))
 
     def test_errors_or_missing_days_cannot_replace_previous_chart(self):
