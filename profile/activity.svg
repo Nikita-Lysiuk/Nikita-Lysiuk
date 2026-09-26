@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="272" viewBox="0 0 900 272" role="img" aria-labelledby="title desc">
 <title id="title">427 contributions over 26 weeks</title>
-<desc id="desc">Weekly GitHub contributions from 2026-03-29 to 2026-09-25. The final week may be partial. Contributions include commits, issues, pull requests, and reviews recorded by GitHub.</desc>
+<desc id="desc">Weekly GitHub contributions from 2026-03-29 to 2026-09-26. The final week may be partial. Contributions include commits, issues, pull requests, and reviews recorded by GitHub.</desc>
 <defs><linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.09"/><stop offset="45%" stop-color="#7c3aed" stop-opacity="0"/></linearGradient></defs>
 <style>.bar { animation: grow 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) backwards; transform-origin: center bottom; }@keyframes grow { from { transform: scaleY(0); opacity: 0.4; } to { transform: scaleY(1); opacity: 1; } }.cursor { animation: blink 1.1s steps(1) infinite; }@keyframes blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }</style>
 <rect x="0.5" y="0.5" width="899" height="271" rx="12" fill="#0d0d16"/>
@@ -9,7 +9,7 @@
 <g font-family="'JetBrains Mono', monospace">
 <text x="32" y="40" fill="#e6e6ec" font-size="19" font-weight="700">427 contributions</text>
 <text x="32" y="62" fill="#8b949e" font-size="12" letter-spacing="1">last 26 weeks &#183; weekly totals</text>
-<text x="868" y="40" text-anchor="end" fill="#a78bfa" font-size="12" opacity="0.8">through 25 Sep 2026</text>
+<text x="868" y="40" text-anchor="end" fill="#a78bfa" font-size="12" opacity="0.8">through 26 Sep 2026</text>
 <path d="M64 206.0H868" stroke="#23233a"/>
 <text x="50" y="210.0" text-anchor="end" fill="#8b949e" font-size="11">0</text>
 <path d="M64 148.0H868" stroke="#23233a"/>
@@ -42,7 +42,7 @@
 <rect class="bar" style="animation-delay: 0.99s" x="740.0" y="145.7" width="20" height="60.3" rx="2" fill="#7c3aed"><title>2026-08-30 to 2026-09-05: 26 contributions</title></rect>
 <rect class="bar" style="animation-delay: 1.03s" x="770.5" y="189.8" width="20" height="16.2" rx="2" fill="#7c3aed"><title>2026-09-06 to 2026-09-12: 7 contributions</title></rect>
 <rect class="bar" style="animation-delay: 1.08s" x="801.0" y="175.8" width="20" height="30.2" rx="2" fill="#7c3aed"><title>2026-09-13 to 2026-09-19: 13 contributions</title></rect>
-<rect class="bar" style="animation-delay: 1.12s" x="831.5" y="122.5" width="20" height="83.5" rx="2" fill="#c4b5fd"><title>2026-09-20 to 2026-09-25: 36 contributions</title></rect>
+<rect class="bar" style="animation-delay: 1.12s" x="831.5" y="122.5" width="20" height="83.5" rx="2" fill="#c4b5fd"><title>2026-09-20 to 2026-09-26: 36 contributions</title></rect>
 <text x="841.5" y="229" text-anchor="middle" fill="#8b949e" font-size="11">20 Sep</text>
 <text x="32" y="254" fill="#7c3aed" font-size="12" font-weight="700">$</text>
 <text x="50" y="254" fill="#8b949e" font-size="11">latest week may be partial</text>
