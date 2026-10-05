@@ -38,13 +38,13 @@
   <rect width="900" height="280" fill="url(#fade-bottom)"/>
 
   <!-- Decorative corner tag -->
-  <text x="860" y="24" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.12" letter-spacing="2">v2.0 // NIKITA_LYSIUK</text>
+  <text x="860" y="24" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.12" letter-spacing="2">v3.0 // NIKITA_LYSIUK</text>
 
   <!-- Accent line top -->
   <line x1="60" y1="44" x2="840" y2="44" stroke="#7c3aed" stroke-width="0.5" opacity="0.4"/>
 
   <!-- Label -->
-  <text x="60" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="3" opacity="0.9">// FULL-STACK DEVELOPER</text>
+  <text x="60" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="3" opacity="0.9">// PRODUCT ENGINEER · AI SYSTEMS</text>
 
   <!-- Main name -->
   <text x="60" y="130" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="-2" opacity="0.97">Nikita</text>
@@ -54,29 +54,29 @@
   </rect>
 
   <!-- Tagline pills -->
-  <rect x="430" y="100" width="94" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
-  <rect x="430" y="100" width="94" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
-  <text x="477" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">full-stack</text>
+  <rect x="430" y="100" width="152" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
+  <rect x="430" y="100" width="152" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
+  <text x="506" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">llm agents in prod</text>
 
-  <rect x="532" y="100" width="127" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
-  <rect x="532" y="100" width="127" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
-  <text x="596" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">ai applications</text>
+  <rect x="590" y="100" width="152" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
+  <rect x="590" y="100" width="152" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
+  <text x="666" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">end-to-end product</text>
 
-  <rect x="430" y="136" width="68" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="430" y="136" width="68" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="464" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">mobile</text>
+  <rect x="430" y="136" width="109" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
+  <rect x="430" y="136" width="109" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <text x="484.5" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">react native</text>
 
-  <rect x="506" y="136" width="74" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="506" y="136" width="74" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="543" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">backend</text>
+  <rect x="547" y="136" width="130" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
+  <rect x="547" y="136" width="130" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <text x="612" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">node · postgres</text>
 
-  <rect x="588" y="136" width="81" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="588" y="136" width="81" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="628" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">graphics</text>
+  <rect x="685" y="136" width="116" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
+  <rect x="685" y="136" width="116" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <text x="743" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">rust · vulkan</text>
 
   <!-- Tagline text -->
-  <text x="430" y="195" font-family="'JetBrains Mono', monospace" font-size="12" fill="#ffffff" opacity="0.25" letter-spacing="0.5">react native · web · apis · postgres</text>
-  <text x="430" y="213" font-family="'JetBrains Mono', monospace" font-size="12" fill="#7c3aed" opacity="0.6" letter-spacing="0.5">llm features in production</text>
+  <text x="430" y="195" font-family="'JetBrains Mono', monospace" font-size="12" fill="#ffffff" opacity="0.25" letter-spacing="0.5">one owner, from app screen to sql</text>
+  <text x="430" y="213" font-family="'JetBrains Mono', monospace" font-size="12" fill="#7c3aed" opacity="0.6" letter-spacing="0.5">ai that talks to real customers</text>
 
   <!-- Accent line bottom -->
   <line x1="60" y1="248" x2="840" y2="248" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>

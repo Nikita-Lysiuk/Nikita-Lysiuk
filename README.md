@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- HERO BANNER — custom SVG -->
-<img src="banner.svg" width="100%" alt="Nikita Lysiuk — full-stack developer, React Native background, graphics and simulation on the side"/>
+<img src="banner.svg" width="100%" alt="Nikita Lysiuk — product engineer building AI systems end to end, from React Native app to Postgres, with Rust and Vulkan depth"/>
 
 </div>
 
@@ -9,7 +9,7 @@
 <div align="center">
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&repeat=true&width=600&lines=full-stack+developer;started+in+react+native+%E2%80%94+now+across+the+stack;shipping+llm+features+in+production;rust+%2B+c%2B%2B+for+graphics+and+simulation)](https://github.com/Nikita-Lysiuk)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&repeat=true&width=600&lines=product+engineer%3A+mobile+app+to+database;building+llm+agents+that+answer+real+customers;react+native+%C2%B7+node+%C2%B7+postgres+%C2%B7+rust;systems+depth%3A+vulkan+compute%2C+esp32+firmware)](https://github.com/Nikita-Lysiuk)
 
 <br/>
 
@@ -23,13 +23,13 @@
 
 <br/>
 
-<!---------- PHILOSOPHY ---------->
+<!---------- ABOUT ---------->
 <div align="center">
-<img src="divider_philosophy.svg" width="100%" alt="philosophy"/>
+<img src="divider_philosophy.svg" width="100%" alt="about"/>
 </div>
 
 <div align="center">
-<img src="philosophy.svg" width="100%" alt="I started in React Native and moved across the stack: mobile, web, backend, AI features. My commercial work is LLM applications — retrieval, structured outputs, tool calling, evaluation, token and cost tracking — under NDA, so no names. I am learning Go on a side project backend, and Rust and C++ carry the graphics work."/>
+<img src="philosophy.svg" width="100%" alt="I build products end to end: the React Native app, the API, the Postgres schema, and the LLM features that do the work. Day job: an AI growth platform for gyms; I built its WhatsApp sales agent, the Meta ads pipeline and the gym-CRM integrations. Ships: store releases, Hetzner deploys, CI/CD, Sentry, job queues. Depth: Rust and C++ down to Vulkan compute and ESP32 firmware."/>
 </div>
 
 <br/>
@@ -40,7 +40,7 @@
 </div>
 
 <div align="center">
-<img src="stack.svg" width="100%" alt="mobile and web: typescript, react native, expo, react · backend: node.js, nestjs, postgres, trpc, docker · ai: rag, embeddings, structured outputs, tool calling, evals · graphics: rust, c++, vulkan, glsl · learning: go, chi, pgx"/>
+<img src="stack.svg" width="100%" alt="product: typescript, react native, expo, react · backend: node.js, fastify, trpc, postgres, drizzle, docker · ai: llm agents, tool calling, gemini, meta graph api · systems: rust, c++, vulkan, glsl, esp32 · learning: go, chi, pgx, odin"/>
 
 <br/>
 
@@ -60,7 +60,7 @@
 <br/>
 
 <div align="center">
-<img src="values.svg" width="100%" alt="product — features end to end, mobile to database · ai features — retrieval, tools, evals, cost per request · graphics — rust and c++, vulkan, fluid simulation"/>
+<img src="values.svg" width="100%" alt="product — features from screen to sql, mobile, web, api, db · ai agents — agents that answer leads on whatsapp, in production · systems — gpu compute to firmware, rust, c++, vulkan, esp32"/>
 </div>
 
 <br/>

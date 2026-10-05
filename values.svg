@@ -30,23 +30,23 @@
 
   <g class="col c0">
     <text x="190" y="72" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" fill="#7c3aed" opacity="0.75">&#9635;</text>
-    <text x="190" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">full-stack</text>
+    <text x="190" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">product</text>
     <line x1="156" y1="122" x2="224" y2="122" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
-    <text x="190" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">features end to end</text>
+    <text x="190" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">features from screen to sql</text>
     <text x="190" y="169" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">mobile · web · api · db</text>
   </g>
   <g class="col c1">
     <text x="450" y="72" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" fill="#7c3aed" opacity="0.75">&#9650;</text>
-    <text x="450" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">ai features</text>
+    <text x="450" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">ai agents</text>
     <line x1="416" y1="122" x2="484" y2="122" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
-    <text x="450" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">retrieval, tools, evals</text>
-    <text x="450" y="169" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">and the cost per request</text>
+    <text x="450" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">agents that answer leads</text>
+    <text x="450" y="169" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">on whatsapp, in production</text>
   </g>
   <g class="col c2">
     <text x="710" y="72" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" fill="#7c3aed" opacity="0.75">&lt;/&gt;</text>
-    <text x="710" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">graphics</text>
+    <text x="710" y="108" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#c4b5fd" letter-spacing="1">systems</text>
     <line x1="676" y1="122" x2="744" y2="122" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
-    <text x="710" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">simulation and rendering</text>
-    <text x="710" y="169" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">rust · c++ · vulkan</text>
+    <text x="710" y="148" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">gpu compute to firmware</text>
+    <text x="710" y="169" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b949e">rust · c++ · vulkan · esp32</text>
   </g>
 </svg>

@@ -10,8 +10,8 @@
   <rect x="0.5" y="0.5" width="439" height="149" rx="12" fill="none" stroke="#23233a" stroke-width="1"/>
   <text x="24" y="40" font-family="'JetBrains Mono', monospace" font-size="14" fill="#7c3aed" font-weight="700">&#10095;</text>
   <text x="42" y="40" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#e6e6ec">Financial-Tracker</text>
-  <text x="24" y="72" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">Personal finance app — React Native / Expo client,</text>
-  <text x="24" y="91" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">Rust / Axum backend.</text>
+  <text x="24" y="72" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">Rust/Axum API with a Postgres outbox and SSE sync;</text>
+  <text x="24" y="91" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">Expo app with hand-built Skia charts.</text>
   <circle cx="29" cy="122" r="5" fill="#3178c6"/><text x="42" y="126" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">TypeScript</text>
   <text x="416" y="126" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" opacity="0.8">view &#8594;</text>
 </svg>

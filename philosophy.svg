@@ -30,11 +30,11 @@
   <text x="876" y="26" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8b949e" opacity="0.35">zsh</text>
 
   <text class="ln l0" x="36" y="78" font-family="'JetBrains Mono', monospace" font-size="13" fill="#a78bfa"><tspan fill="#7c3aed" font-weight="700">$</tspan> cat about.txt</text>
-  <text class="ln l2" x="36" y="130" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9c9d4">I started in React Native. Now I work across the stack —</text>
-  <text class="ln l3" x="36" y="156" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9c9d4">mobile, web, backend, and the AI features on top of them.</text>
-  <text class="ln l5" x="36" y="208" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9c9d4">Day job: LLM applications under NDA — RAG, structured</text>
-  <text class="ln l6" x="36" y="234" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9c9d4">outputs, tool calling, evals, token and cost tracking.</text>
-  <text class="ln l8" x="36" y="286" font-family="'JetBrains Mono', monospace" font-size="13"><tspan fill="#a78bfa">Now:</tspan><tspan fill="#ffffff" font-weight="600">   building features end to end.</tspan></text>
-  <text class="ln l9" x="36" y="312" font-family="'JetBrains Mono', monospace" font-size="13"><tspan fill="#a78bfa">Next:</tspan><tspan fill="#ffffff" font-weight="600">  Go on a side-project backend, Rust and C++ at night.</tspan></text>
+  <text class="ln l2" x="36" y="130" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9c9d4">I build products end to end: the React Native app, the API,</text>
+  <text class="ln l3" x="36" y="156" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9c9d4">the Postgres schema, and the LLM features that do the work.</text>
+  <text class="ln l5" x="36" y="208" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9c9d4">Day job: an AI growth platform for gyms. I built its WhatsApp</text>
+  <text class="ln l6" x="36" y="234" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9c9d4">sales agent, the Meta ads pipeline and the gym-CRM integrations.</text>
+  <text class="ln l8" x="36" y="286" font-family="'JetBrains Mono', monospace" font-size="13"><tspan fill="#a78bfa">Ships:</tspan><tspan fill="#ffffff" font-weight="600">  store releases, Hetzner deploys, CI/CD, Sentry, job queues.</tspan></text>
+  <text class="ln l9" x="36" y="312" font-family="'JetBrains Mono', monospace" font-size="13"><tspan fill="#a78bfa">Depth:</tspan><tspan fill="#ffffff" font-weight="600">  Rust and C++ down to Vulkan compute and ESP32 firmware.</tspan></text>
   <g class="ln l11"><text x="36" y="364" font-family="'JetBrains Mono', monospace" font-size="13" fill="#7c3aed" font-weight="700">$</text><rect class="cursor" x="54" y="352" width="8" height="15" fill="#c4b5fd" opacity="0.9"/></g>
 </svg>

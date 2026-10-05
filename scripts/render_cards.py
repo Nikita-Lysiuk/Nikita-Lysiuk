@@ -37,28 +37,28 @@ REPOS = [
         "name": "Fluid-Engine",
         "featured": True,
         "tag": "diploma project",
-        "tagline": "Real-time DFSPH fluid simulation in Rust with Vulkan rendering — "
-                   "compute pipelines, CPU/GPU parallelism, performance first.",
+        "tagline": "Real-time DFSPH fluid simulation in Rust on Vulkan compute pipelines, "
+                   "built to find where CPU/GPU parallelism actually pays off.",
     },
     {
         "name": "Financial-Tracker",
-        "tagline": "Personal finance app — React Native / Expo client, "
-                   "Rust / Axum backend.",
+        "tagline": "Rust/Axum API with a Postgres outbox and SSE sync; "
+                   "Expo app with hand-built Skia charts.",
     },
     {
         "name": "Vinyl-Store",
-        "tagline": "REST API for a vinyl record store — auth, orders, reviews, "
-                   "Stripe payments, AWS S3.",
+        "tagline": "REST API for a record store: auth, orders, reviews, "
+                   "Stripe payments, product images on AWS S3.",
     },
     {
         "name": "egypt_adventure",
-        "tagline": "Roguelike survival horror in C++ — procedural catacombs "
-                   "where light itself is a resource.",
+        "tagline": "Roguelike survival horror in C++: procedural catacombs "
+                   "where torch light is the resource you run out of.",
     },
     {
         "name": "PixelPatternsAI",
-        "tagline": "A neural network built from scratch in pure NumPy — "
-                   "no frameworks, just the math.",
+        "tagline": "Neural network from scratch in NumPy: forward pass, "
+                   "backprop and gradient descent written by hand.",
     },
 ]
 
