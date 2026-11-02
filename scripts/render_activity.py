@@ -30,66 +30,58 @@ def fetch_calendar():
     return json.loads(result.stdout)
 
 
-def weekly_counts(payload):
+def daily_counts(payload):
     if payload.get("errors"):
         raise ValueError("GitHub returned GraphQL errors")
-    weeks = payload["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"][-26:]
-    if len(weeks) != 26:
-        raise ValueError("Expected 26 weeks of contribution data")
+    weeks = payload["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+    days = [day for week in weeks for day in week["contributionDays"]][-30:]
+    if len(days) != 30:
+        raise ValueError("Expected 30 days of contribution data")
     result, previous = [], None
-    for index, week in enumerate(weeks):
-        days = week["contributionDays"]
-        if not 1 <= len(days) <= 7 or (index < 25 and len(days) != 7):
-            raise ValueError("Incomplete contribution calendar")
-        dates, total = [], 0
-        for day in days:
-            date = dt.date.fromisoformat(day["date"])
-            count = day["contributionCount"]
-            if type(count) is not int or count < 0:
-                raise ValueError("Invalid contribution count")
-            if previous and date != previous + dt.timedelta(days=1):
-                raise ValueError("Contribution dates must be consecutive")
-            dates.append(date)
-            total += count
-            previous = date
-        if dates[0].weekday() != 6:
-            raise ValueError("Expected GitHub's Sunday-start weeks")
-        result.append((dates[0], dates[-1], total))
+    for day in days:
+        date = dt.date.fromisoformat(day["date"])
+        count = day["contributionCount"]
+        if type(count) is not int or count < 0:
+            raise ValueError("Invalid contribution count")
+        if previous and date != previous + dt.timedelta(days=1):
+            raise ValueError("Contribution dates must be consecutive")
+        result.append((date, count))
+        previous = date
     return result
 
 
-def render(payload):
-    weeks = weekly_counts(payload)
-    total = sum(week[2] for week in weeks)
-    ceiling = max(10, math.ceil(max(week[2] for week in weeks) / 10) * 10)
-    first, last = weeks[0][0], weeks[-1][1]
+def render(payload, updated_at=None):
+    days = daily_counts(payload)
+    updated_at = updated_at or dt.datetime.now(dt.timezone.utc)
+    updated_at = updated_at.astimezone(dt.timezone.utc)
+    first, last = days[0][0], days[-1][0]
+    if last > updated_at.date():
+        raise ValueError("Contribution calendar contains future dates")
+    completed_date, completed_count = days[-2] if last == updated_at.date() else days[-1]
+    total = sum(count for _, count in days)
+    # Leave room above the tallest bar for its exact count.
+    ceiling = max(10, math.ceil((max(count for _, count in days) + 3) / 10) * 10)
     parts = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="272" '
         'viewBox="0 0 900 272" role="img" aria-labelledby="title desc">',
-        f'<title id="title">{total:,} contributions over 26 weeks</title>',
-        f'<desc id="desc">Weekly GitHub contributions from {first} to {last}. '
-        'The final week may be partial. Contributions include commits, issues, '
+        f'<title id="title">{total:,} contributions over 30 days</title>',
+        f'<desc id="desc">Daily GitHub contributions from {first} to {last}. '
+        f'{completed_date}: {completed_count} contributions. '
+        'Each bar represents one day. Today may be partial. Contributions include commits, issues, '
         'pull requests, and reviews recorded by GitHub.</desc>',
         '<defs><linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">'
         '<stop offset="0%" stop-color="#7c3aed" stop-opacity="0.09"/>'
         '<stop offset="45%" stop-color="#7c3aed" stop-opacity="0"/>'
         '</linearGradient></defs>',
-        '<style>'
-        '.bar { animation: grow 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) backwards; '
-        'transform-origin: center bottom; }'
-        '@keyframes grow { from { transform: scaleY(0); opacity: 0.4; } '
-        'to { transform: scaleY(1); opacity: 1; } }'
-        '.cursor { animation: blink 1.1s steps(1) infinite; }'
-        '@keyframes blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }'
-        '</style>',
         '<rect x="0.5" y="0.5" width="899" height="271" rx="12" fill="#0d0d16"/>',
         '<rect x="0.5" y="0.5" width="899" height="271" rx="12" fill="url(#sheen)"/>',
         '<rect x="0.5" y="0.5" width="899" height="271" rx="12" fill="none" '
         'stroke="#23233a" stroke-width="1"/>',
         '<g font-family="\'JetBrains Mono\', monospace">',
         f'<text x="32" y="40" fill="#e6e6ec" font-size="19" font-weight="700">{total:,} contributions</text>',
-        '<text x="32" y="62" fill="#8b949e" font-size="12" letter-spacing="1">last 26 weeks &#183; weekly totals</text>',
-        f'<text x="868" y="40" text-anchor="end" fill="#a78bfa" font-size="12" opacity="0.8">through {last:%d %b %Y}</text>',
+        '<text x="32" y="62" fill="#8b949e" font-size="12">last 30 days &#183; one bar = one day</text>',
+        f'<text x="868" y="40" text-anchor="end" fill="#c4b5fd" font-size="16" font-weight="700">{completed_date:%d %b}: {completed_count}</text>',
+        '<text x="868" y="62" text-anchor="end" fill="#8b949e" font-size="11">last completed day</text>',
     ]
     for value in (0, ceiling // 2, ceiling):
         y = 206 - value / ceiling * 116
@@ -97,25 +89,32 @@ def render(payload):
             f'<path d="M64 {y:.1f}H868" stroke="#23233a"/>',
             f'<text x="50" y="{y + 4:.1f}" text-anchor="end" fill="#8b949e" font-size="11">{value}</text>',
         ])
-    for index, (start, end, count) in enumerate(weeks):
-        x = 69 + index * 30.5
+    for index, (date, count) in enumerate(days):
+        x = 69 + index * 26.5
         height = count / ceiling * 116
-        color = "#c4b5fd" if index == 25 else "#7c3aed"
+        color = "#c4b5fd" if date == completed_date else "#7c3aed"
         if count:
             parts.append(
-                f'<rect class="bar" style="animation-delay: {index * 0.045:.2f}s" '
-                f'x="{x:.1f}" y="{206 - height:.1f}" width="20" '
+                f'<rect class="bar" '
+                f'x="{x:.1f}" y="{206 - height:.1f}" width="18" '
                 f'height="{height:.1f}" rx="2" fill="{color}">'
-                f'<title>{start} to {end}: {count} contributions</title></rect>'
+                f'<title>{date}: {count} contributions</title></rect>'
             )
-        if index in (0, 5, 10, 15, 20, 25):
+        if date == completed_date and count:
             parts.append(
-                f'<text x="{x + 10:.1f}" y="229" text-anchor="middle" '
-                f'fill="#8b949e" font-size="11">{start:%d %b}</text>'
+                f'<text x="{x + 9:.1f}" y="{200 - height:.1f}" text-anchor="middle" '
+                f'fill="#c4b5fd" font-size="11">{count}</text>'
             )
-    parts.append('<text x="32" y="254" fill="#7c3aed" font-size="12" font-weight="700">$</text>')
-    parts.append('<text x="50" y="254" fill="#8b949e" font-size="11">latest week may be partial</text>')
-    parts.append('<rect class="cursor" x="222" y="243" width="7" height="14" fill="#c4b5fd" opacity="0.9"/>')
+        if index in (0, 7, 14, 21, 29):
+            parts.append(
+                f'<text x="{x + 9:.1f}" y="229" text-anchor="middle" '
+                f'fill="#8b949e" font-size="11">{date:%d %b}</text>'
+            )
+    parts.append('<text x="32" y="254" fill="#8b949e" font-size="10">today may be partial</text>')
+    parts.append(
+        f'<text x="868" y="254" text-anchor="end" fill="#8b949e" font-size="10">'
+        f'updated {updated_at:%d %b %Y %H:%M} UTC</text>'
+    )
     parts.append('</g></svg>\n')
     return "\n".join(parts)
 

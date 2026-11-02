@@ -1,162 +1,55 @@
-<div align="center">
+<img src="banner.svg" width="100%" alt="Nikita Lysiuk — full-stack developer building products and AI systems"/>
 
-<!-- HERO BANNER — custom SVG -->
-<img src="banner.svg" width="100%" alt="Nikita Lysiuk — product engineer building AI systems end to end, from React Native app to Postgres, with Rust and Vulkan depth"/>
+I'm a full-stack developer building products and AI systems end to end.
 
-</div>
+Beyond my commercial work, I'm deepening my understanding of software architecture, concurrency, and distributed systems — learning how to design software that stays understandable as it grows.
 
-<!---------- TYPING HEADLINE ---------->
-<div align="center">
-<br/>
+I lead backend development for **[Uniezz](https://github.com/Uniezz/uniezz-backend)**, explored GPU simulation for my bachelor's thesis, and am working toward a cooperative puzzle game for my master's.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&repeat=true&width=600&lines=product+engineer%3A+mobile+app+to+database;building+llm+agents+that+answer+real+customers;react+native+%C2%B7+node+%C2%B7+postgres+%C2%B7+rust;systems+depth%3A+vulkan+compute%2C+esp32+firmware)](https://github.com/Nikita-Lysiuk)
+[LinkedIn](https://linkedin.com/in/nikita-lysiuk-7682b42ab/) · [X](https://x.com/Nikita_lysiuk06) · [Stack Overflow](https://stackoverflow.com/users/23113955/nikita)
 
-<br/>
+## Selected work
 
-<!---------- SOCIAL BADGES ---------->
-[![](https://img.shields.io/badge/-GitHub-0d1117?style=for-the-badge&logo=github&logoColor=a78bfa)](https://github.com/Nikita-Lysiuk)&nbsp;
-[![](https://img.shields.io/badge/-LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=a78bfa)](https://linkedin.com/in/nikita-lysiuk-7682b42ab/)&nbsp;
-[![](https://img.shields.io/badge/-X%20%2F%20Twitter-0d1117?style=for-the-badge&logo=x&logoColor=a78bfa)](https://x.com/Nikita_lysiuk06)&nbsp;
-[![](https://img.shields.io/badge/-StackOverflow-0d1117?style=for-the-badge&logo=stackoverflow&logoColor=a78bfa)](https://stackoverflow.com/users/23113955/nikita)
+### [Uniezz Backend](https://github.com/Uniezz/uniezz-backend)
 
-</div>
+**A student community platform in Lublin · active development**
 
-<br/>
+I lead the backend: architecture, project setup, and most of the implementation. I also break down work and guide student contributors through it.
 
-<!---------- ABOUT ---------->
-<div align="center">
-<img src="divider_philosophy.svg" width="100%" alt="about"/>
-</div>
+Built in **Go and PostgreSQL**, with university authentication, profiles, a community feed, and media handling. The code reflects what I'm focusing on now: clear module boundaries, consistent transactions, and predictable behaviour under concurrent requests.
 
-<div align="center">
-<img src="philosophy.svg" width="100%" alt="I build products end to end: the React Native app, the API, the Postgres schema, and the LLM features that do the work. Day job: an AI growth platform for gyms; I built its WhatsApp sales agent, the Meta ads pipeline and the gym-CRM integrations. Ships: store releases, Hetzner deploys, CI/CD, Sentry, job queues. Depth: Rust and C++ down to Vulkan compute and ESP32 firmware."/>
-</div>
+[Repository](https://github.com/Uniezz/uniezz-backend) · [Architecture conventions](https://github.com/Uniezz/uniezz-backend/blob/main/docs/CONVENTIONS.md)
 
-<br/>
+### [Fluid Engine](https://github.com/Nikita-Lysiuk/Fluid-Engine)
 
-<!---------- STACK ---------->
-<div align="center">
-<img src="divider_stack.svg" width="100%" alt="stack"/>
-</div>
+**GPU fluid simulation · bachelor's thesis**
 
-<div align="center">
-<img src="stack.svg" width="100%" alt="product: typescript, react native, expo, react · backend: node.js, fastify, trpc, postgres, drizzle, docker · ai: llm agents, tool calling, gemini, meta graph api · systems: rust, c++, vulkan, glsl, esp32 · learning: go, chi, pgx, odin"/>
+A **Rust and Vulkan** project exploring particle simulation, GPU parallelism, and rendering. Includes a DFSPH solver, spatial hashing, GPU sorting, volumetric water rendering, and performance measurements.
 
-<br/>
+<a href="https://github.com/Nikita-Lysiuk/Fluid-Engine">
+  <img src="https://raw.githubusercontent.com/Nikita-Lysiuk/Fluid-Engine/HEAD/docs/showcase.gif" width="100%" alt="Fluid Engine: a moving wall pushes simulated water around a pillar"/>
+</a>
 
-<sub>what the repos say:</sub>
+<sub>Offline-rendered showcase with approximately 155,000 particles. See the repository for runtime benchmarks and technical details.</sub>
 
-[![Top Langs](./profile/top-langs.svg)](https://github.com/Nikita-Lysiuk?tab=repositories)
+### [Egypt Adventure](https://github.com/Nikita-Lysiuk/egypt_adventure)
 
-</div>
+A **C++** console roguelike with procedural dungeons, enemy AI, combat, and limited torchlight. An exploration of game systems and procedural generation.
 
-<br/>
+## Exploring next
 
-<!---------- WHAT I CARE ABOUT ---------->
-<div align="center">
-<img src="divider_values.svg" width="100%" alt="what i work on"/>
-</div>
+A cooperative puzzle game in **Unreal Engine 5**, where players use a camera and photography to solve puzzles together. My goal is to develop it over the next two years and make it the basis of my master's thesis.
 
-<br/>
+## Tools I work with
 
-<div align="center">
-<img src="values.svg" width="100%" alt="product — features from screen to sql, mobile, web, api, db · ai agents — agents that answer leads on whatsapp, in production · systems — gpu compute to firmware, rust, c++, vulkan, esp32"/>
-</div>
+| Area | Tools |
+| --- | --- |
+| Commercial product work | JavaScript, TypeScript, React, React Native, Node.js, PostgreSQL |
+| Backend & architecture | Go, SQL, API design, transactions, background jobs |
+| Simulation & games | Rust, C++, Vulkan, GLSL · exploring Unreal Engine 5 |
+| AI systems | LLM agents, tool calling, application integrations |
+| Delivery & observability | Docker, CI/CD, Sentry, OpenTelemetry |
 
-<br/>
+## Activity
 
-<!---------- SELECTED WORK ---------->
-<div align="center">
-<img src="divider_work.svg" width="100%" alt="selected work"/>
-</div>
-
-<br/>
-
-<!-- Featured project — full width -->
-<div align="center">
-
-[<img src="./profile/card-Fluid-Engine.svg" width="100%" alt="Fluid-Engine"/>](https://github.com/Nikita-Lysiuk/Fluid-Engine)
-
-</div>
-
-<!-- 2x2 grid -->
-<table width="100%">
-<tr>
-<td width="50%">
-
-[<img src="./profile/card-Vinyl-Store.svg" width="100%" alt="Vinyl-Store"/>](https://github.com/Nikita-Lysiuk/Vinyl-Store)
-
-</td>
-<td width="50%">
-
-[<img src="./profile/card-egypt_adventure.svg" width="100%" alt="egypt_adventure"/>](https://github.com/Nikita-Lysiuk/egypt_adventure)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-[<img src="./profile/card-PixelPatternsAI.svg" width="100%" alt="PixelPatternsAI"/>](https://github.com/Nikita-Lysiuk/PixelPatternsAI)
-
-</td>
-<td width="50%">
-
-[<img src="./profile/card-Financial-Tracker.svg" width="100%" alt="Financial-Tracker"/>](https://github.com/Nikita-Lysiuk/Financial-Tracker)
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!---------- STATS ---------->
-<div align="center">
-<img src="divider_stats.svg" width="100%" alt="stats"/>
-</div>
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="50%" align="center">
-
-[<img src="./profile/stats.svg" width="100%" alt="GitHub stats"/>](https://github.com/Nikita-Lysiuk)
-
-</td>
-<td width="50%" align="center">
-
-[<img src="https://streak-stats.demolab.com?user=Nikita-Lysiuk&hide_border=true&background=00000000&ring=7C3AED&fire=A78BFA&currStreakNum=FFFFFF&currStreakLabel=A78BFA&sideNums=A78BFA&sideLabels=8B949E&dates=6B7280&stroke=1A1A2E" width="100%" alt="GitHub streak"/>](https://github.com/Nikita-Lysiuk)
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!---------- CONTRIBUTIONS ---------->
-<div align="center">
-<img src="divider_contributions.svg" width="100%" alt="contributions"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-[<img src="./profile/activity.svg" width="100%" alt="weekly GitHub contributions over the last 26 weeks; the latest week may be partial"/>](https://github.com/Nikita-Lysiuk?tab=overview)
-
-<img src="./profile/snake.svg" width="100%" alt="contribution snake"/>
-
-</div>
-
-<br/>
-
-<!---------- FOOTER ---------->
-<div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=Nikita-Lysiuk&style=flat-square&color=7c3aed&label=profile+views&labelColor=0d0d18"/>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=7c3aed&height=80&section=footer" width="100%"/>
-
-</div>
+[<img src="./profile/activity.svg" width="100%" alt="Daily GitHub contributions over the last 30 days, with the last completed day's exact count and a UTC refresh timestamp"/>](https://github.com/Nikita-Lysiuk?tab=overview)

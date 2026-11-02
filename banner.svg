@@ -1,87 +1,24 @@
-<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180" role="img" aria-labelledby="title desc">
+  <title id="title">Nikita Lysiuk</title>
+  <desc id="desc">Full-stack developer. Products, AI systems, and software architecture. Lublin, Poland.</desc>
   <defs>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7c3aed" stroke-width="0.3" opacity="0.25"/>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.18"/>
     </pattern>
-    <linearGradient id="fade-left" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0a0a0f" stop-opacity="1"/>
-      <stop offset="30%" stop-color="#0a0a0f" stop-opacity="0"/>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="fade-right" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="70%" stop-color="#0a0a0f" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
-    </linearGradient>
-    <linearGradient id="fade-bottom" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="60%" stop-color="#0a0a0f" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="0"/>
-    </radialGradient>
   </defs>
-
-  <!-- Background -->
-  <rect width="900" height="280" fill="#0a0a0f"/>
-
-  <!-- Grid -->
-  <rect width="900" height="280" fill="url(#grid)"/>
-
-  <!-- Glow center -->
-  <rect width="900" height="280" fill="url(#glow)">
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Edge fades -->
-  <rect width="900" height="280" fill="url(#fade-left)"/>
-  <rect width="900" height="280" fill="url(#fade-right)"/>
-  <rect width="900" height="280" fill="url(#fade-bottom)"/>
-
-  <!-- Decorative corner tag -->
-  <text x="860" y="24" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.12" letter-spacing="2">v3.0 // NIKITA_LYSIUK</text>
-
-  <!-- Accent line top -->
-  <line x1="60" y1="44" x2="840" y2="44" stroke="#7c3aed" stroke-width="0.5" opacity="0.4"/>
-
-  <!-- Label -->
-  <text x="60" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7c3aed" letter-spacing="3" opacity="0.9">// PRODUCT ENGINEER · AI SYSTEMS</text>
-
-  <!-- Main name -->
-  <text x="60" y="130" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="-2" opacity="0.97">Nikita</text>
-  <text x="60" y="210" font-family="'Syne', 'JetBrains Mono', monospace" font-size="72" font-weight="800" fill="#7c3aed" letter-spacing="-2" opacity="0.97">Lysiuk</text>
-  <rect x="332" y="158" width="22" height="52" fill="#7c3aed" opacity="0.85">
-    <animate attributeName="opacity" values="0.85;0.85;0;0" keyTimes="0;0.5;0.51;1" dur="1.2s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Tagline pills -->
-  <rect x="430" y="100" width="152" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
-  <rect x="430" y="100" width="152" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
-  <text x="506" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">llm agents in prod</text>
-
-  <rect x="590" y="100" width="152" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
-  <rect x="590" y="100" width="152" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
-  <text x="666" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a78bfa" letter-spacing="0.5">end-to-end product</text>
-
-  <rect x="430" y="136" width="109" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="430" y="136" width="109" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="484.5" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">react native</text>
-
-  <rect x="547" y="136" width="130" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="547" y="136" width="130" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="612" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">node · postgres</text>
-
-  <rect x="685" y="136" width="116" height="26" rx="13" fill="#ffffff" opacity="0.04"/>
-  <rect x="685" y="136" width="116" height="26" rx="13" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
-  <text x="743" y="153" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ffffff" opacity="0.45" letter-spacing="0.5">rust · vulkan</text>
-
-  <!-- Tagline text -->
-  <text x="430" y="195" font-family="'JetBrains Mono', monospace" font-size="12" fill="#ffffff" opacity="0.25" letter-spacing="0.5">one owner, from app screen to sql</text>
-  <text x="430" y="213" font-family="'JetBrains Mono', monospace" font-size="12" fill="#7c3aed" opacity="0.6" letter-spacing="0.5">ai that talks to real customers</text>
-
-  <!-- Accent line bottom -->
-  <line x1="60" y1="248" x2="840" y2="248" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
-
-  <!-- Location -->
-  <text x="60" y="264" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.2" letter-spacing="2">LUBLIN // PL</text>
-  <text x="840" y="264" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" opacity="0.2" letter-spacing="2">CS @ UMCS</text>
+  <rect x="0.5" y="0.5" width="899" height="179" rx="12" fill="#0d0d16" stroke="#23233a"/>
+  <rect x="1" y="1" width="898" height="178" rx="12" fill="url(#grid)"/>
+  <rect x="1" y="1" width="898" height="178" rx="12" fill="url(#wash)"/>
+  <g font-family="'JetBrains Mono', monospace">
+    <text x="36" y="37" fill="#a78bfa" font-size="11" letter-spacing="2">FULL-STACK DEVELOPER</text>
+    <text x="33" y="104" fill="#e6e6ec" font-size="52" font-weight="700" letter-spacing="-2">Nikita <tspan fill="#a78bfa">Lysiuk</tspan></text>
+    <path d="M36 126H864" stroke="#7c3aed" stroke-opacity="0.35"/>
+    <text x="36" y="153" fill="#b0b4c0" font-size="12">products &#183; AI systems &#183; software architecture</text>
+    <text x="864" y="37" text-anchor="end" fill="#b0b4c0" font-size="11">LUBLIN / PL</text>
+    <text x="864" y="153" text-anchor="end" fill="#a78bfa" font-size="12">building end to end</text>
+  </g>
 </svg>
