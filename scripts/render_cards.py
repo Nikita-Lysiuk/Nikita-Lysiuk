@@ -30,41 +30,40 @@ LANG_COLORS = {
     "JavaScript": "#f1e05a",
     "Python": "#3572A5",
     "Kotlin": "#A97BFF",
+    "Go": "#00ADD8",
 }
 
 REPOS = [
     {
-        "name": "Fluid-Engine",
+        "name": "uniezz-backend",
+        "owner": "Uniezz",
+        "title": "Uniezz",
+        "language": "Go",
         "featured": True,
-        "tag": "diploma project",
-        "tagline": "Real-time DFSPH fluid simulation in Rust on Vulkan compute pipelines, "
-                   "built to find where CPU/GPU parallelism actually pays off.",
+        "tag": "actively building",
+        "tagline": "A student community platform in Lublin. Leading backend architecture, setup and "
+                   "implementation, and guiding contributors. Built with Go and PostgreSQL.",
     },
     {
-        "name": "Financial-Tracker",
-        "tagline": "Rust/Axum API with a Postgres outbox and SSE sync; "
-                   "Expo app with hand-built Skia charts.",
-    },
-    {
-        "name": "Vinyl-Store",
-        "tagline": "REST API for a record store: auth, orders, reviews, "
-                   "Stripe payments, product images on AWS S3.",
+        "name": "Fluid-Engine",
+        "language": "Rust",
+        "featured": True,
+        "tag": "bachelor's thesis",
+        "tagline": "GPU fluid simulation in Rust and Vulkan: a DFSPH solver, GPU sorting "
+                   "and volumetric water rendering. Built to explore parallelism and performance.",
     },
     {
         "name": "egypt_adventure",
-        "tagline": "Roguelike survival horror in C++: procedural catacombs "
-                   "where torch light is the resource you run out of.",
-    },
-    {
-        "name": "PixelPatternsAI",
-        "tagline": "Neural network from scratch in NumPy: forward pass, "
-                   "backprop and gradient descent written by hand.",
+        "title": "Egypt Adventure",
+        "language": "C++",
+        "tagline": "A C++ roguelike with procedural dungeons, enemy AI "
+                   "and limited torchlight.",
     },
 ]
 
 
-def fetch(repo):
-    req = urllib.request.Request(f"https://api.github.com/repos/{USER}/{repo}")
+def fetch(repo, owner=USER, language=""):
+    req = urllib.request.Request(f"https://api.github.com/repos/{owner}/{repo}")
     token = os.environ.get("GITHUB_TOKEN")
     if token:
         req.add_header("Authorization", f"Bearer {token}")
@@ -72,10 +71,10 @@ def fetch(repo):
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             data = json.load(r)
-        return data.get("stargazers_count", 0), data.get("language") or ""
+        return data.get("stargazers_count", 0), data.get("language") or language
     except Exception as e:  # keep rendering with placeholders on API failure
         print(f"  warn: could not fetch {repo}: {e}")
-        return 0, ""
+        return 0, language
 
 
 def wrap(text, max_chars):
@@ -119,7 +118,7 @@ def lang_stars(x, y, lang, stars, anchor_end_x=None):
 
 def card(repo, stars, lang):
     W, H = 440, 150
-    name = html.escape(repo["name"])
+    name = html.escape(repo.get("title", repo["name"]))
     lines = wrap(repo["tagline"], 54)
     svg = head(W, H)
     svg += f'  <text x="24" y="40" font-family="\'JetBrains Mono\', monospace" font-size="14" fill="{VIOLET}" font-weight="700">&#10095;</text>\n'
@@ -127,14 +126,15 @@ def card(repo, stars, lang):
     for i, ln in enumerate(lines):
         svg += f'  <text x="24" y="{72 + i * 19}" font-family="\'JetBrains Mono\', monospace" font-size="11.5" fill="{GREY}">{html.escape(ln)}</text>\n'
     svg += "  " + lang_stars(24, 126, lang, stars, anchor_end_x=352) + "\n"
-    svg += f'  <text x="416" y="126" text-anchor="end" font-family="\'JetBrains Mono\', monospace" font-size="11" fill="{VIOLET_LT}" opacity="0.8">view &#8594;</text>\n'
+    action = html.escape(repo.get("action", "view →"))
+    svg += f'  <text x="416" y="126" text-anchor="end" font-family="\'JetBrains Mono\', monospace" font-size="11" fill="{VIOLET_LT}" opacity="0.8">{action}</text>\n'
     svg += "</svg>\n"
     return svg
 
 
 def featured_card(repo, stars, lang):
     W, H = 900, 176
-    name = html.escape(repo["name"])
+    name = html.escape(repo.get("title", repo["name"]))
     tag = html.escape(repo.get("tag", "featured"))
     lines = wrap(repo["tagline"], 92)
     tag_w = round(36 + 7.8 * len(tag))
@@ -156,7 +156,7 @@ def featured_card(repo, stars, lang):
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     for repo in REPOS:
-        stars, lang = fetch(repo["name"])
+        stars, lang = fetch(repo["name"], repo.get("owner", USER), repo.get("language", ""))
         svg = featured_card(repo, stars, lang) if repo.get("featured") else card(repo, stars, lang)
         path = os.path.join(OUT_DIR, f"card-{repo['name']}.svg")
         with open(path, "w", encoding="utf-8") as f:
